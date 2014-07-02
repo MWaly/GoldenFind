@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		528123BD19644F8F00B02456 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 528123BC19644F8F00B02456 /* Foundation.framework */; };
+		528123BF19644F8F00B02456 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 528123BE19644F8F00B02456 /* CoreGraphics.framework */; };
+		528123C119644F8F00B02456 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 528123C019644F8F00B02456 /* UIKit.framework */; };
+		528123C719644F8F00B02456 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 528123C519644F8F00B02456 /* InfoPlist.strings */; };
+		528123C919644F8F00B02456 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 528123C819644F8F00B02456 /* main.m */; };
+		528123CD19644F8F00B02456 /* GFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 528123CC19644F8F00B02456 /* GFAppDelegate.m */; };
+		528123D019644F8F00B02456 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 528123CE19644F8F00B02456 /* Main.storyboard */; };
+		528123D319644F8F00B02456 /* GFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 528123D219644F8F00B02456 /* GFViewController.m */; };
+		528123D519644F8F00B02456 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 528123D419644F8F00B02456 /* Images.xcassets */; };
+		528123DC19644F8F00B02456 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 528123DB19644F8F00B02456 /* XCTest.framework */; };
+		528123DD19644F8F00B02456 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 528123BC19644F8F00B02456 /* Foundation.framework */; };
+		528123DE19644F8F00B02456 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 528123C019644F8F00B02456 /* UIKit.framework */; };
+		528123E619644F8F00B02456 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 528123E419644F8F00B02456 /* InfoPlist.strings */; };
+		528123E819644F8F00B02456 /* GoldenFindTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 528123E719644F8F00B02456 /* GoldenFindTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		528123DF19644F8F00B02456 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 528123B119644F8F00B02456 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 528123B819644F8F00B02456;
+			remoteInfo = GoldenFind;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		528123B919644F8F00B02456 /* GoldenFind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoldenFind.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		528123BC19644F8F00B02456 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		528123BE19644F8F00B02456 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		528123C019644F8F00B02456 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		528123C419644F8F00B02456 /* GoldenFind-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoldenFind-Info.plist"; sourceTree = "<group>"; };
+		528123C619644F8F00B02456 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		528123C819644F8F00B02456 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		528123CA19644F8F00B02456 /* GoldenFind-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GoldenFind-Prefix.pch"; sourceTree = "<group>"; };
+		528123CB19644F8F00B02456 /* GFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GFAppDelegate.h; sourceTree = "<group>"; };
+		528123CC19644F8F00B02456 /* GFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GFAppDelegate.m; sourceTree = "<group>"; };
+		528123CF19644F8F00B02456 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		528123D119644F8F00B02456 /* GFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GFViewController.h; sourceTree = "<group>"; };
+		528123D219644F8F00B02456 /* GFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GFViewController.m; sourceTree = "<group>"; };
+		528123D419644F8F00B02456 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		528123DA19644F8F00B02456 /* GoldenFindTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoldenFindTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		528123DB19644F8F00B02456 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		528123E319644F8F00B02456 /* GoldenFindTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoldenFindTests-Info.plist"; sourceTree = "<group>"; };
+		528123E519644F8F00B02456 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		528123E719644F8F00B02456 /* GoldenFindTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoldenFindTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		528123B619644F8F00B02456 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				528123BF19644F8F00B02456 /* CoreGraphics.framework in Frameworks */,
+				528123C119644F8F00B02456 /* UIKit.framework in Frameworks */,
+				528123BD19644F8F00B02456 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		528123D719644F8F00B02456 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				528123DC19644F8F00B02456 /* XCTest.framework in Frameworks */,
+				528123DE19644F8F00B02456 /* UIKit.framework in Frameworks */,
+				528123DD19644F8F00B02456 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		528123B019644F8F00B02456 = {
+			isa = PBXGroup;
+			children = (
+				528123C219644F8F00B02456 /* GoldenFind */,
+				528123E119644F8F00B02456 /* GoldenFindTests */,
+				528123BB19644F8F00B02456 /* Frameworks */,
+				528123BA19644F8F00B02456 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		528123BA19644F8F00B02456 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				528123B919644F8F00B02456 /* GoldenFind.app */,
+				528123DA19644F8F00B02456 /* GoldenFindTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		528123BB19644F8F00B02456 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				528123BC19644F8F00B02456 /* Foundation.framework */,
+				528123BE19644F8F00B02456 /* CoreGraphics.framework */,
+				528123C019644F8F00B02456 /* UIKit.framework */,
+				528123DB19644F8F00B02456 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		528123C219644F8F00B02456 /* GoldenFind */ = {
+			isa = PBXGroup;
+			children = (
+				528123CB19644F8F00B02456 /* GFAppDelegate.h */,
+				528123CC19644F8F00B02456 /* GFAppDelegate.m */,
+				528123CE19644F8F00B02456 /* Main.storyboard */,
+				528123D119644F8F00B02456 /* GFViewController.h */,
+				528123D219644F8F00B02456 /* GFViewController.m */,
+				528123D419644F8F00B02456 /* Images.xcassets */,
+				528123C319644F8F00B02456 /* Supporting Files */,
+			);
+			path = GoldenFind;
+			sourceTree = "<group>";
+		};
+		528123C319644F8F00B02456 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				528123C419644F8F00B02456 /* GoldenFind-Info.plist */,
+				528123C519644F8F00B02456 /* InfoPlist.strings */,
+				528123C819644F8F00B02456 /* main.m */,
+				528123CA19644F8F00B02456 /* GoldenFind-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		528123E119644F8F00B02456 /* GoldenFindTests */ = {
+			isa = PBXGroup;
+			children = (
+				528123E719644F8F00B02456 /* GoldenFindTests.m */,
+				528123E219644F8F00B02456 /* Supporting Files */,
+			);
+			path = GoldenFindTests;
+			sourceTree = "<group>";
+		};
+		528123E219644F8F00B02456 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				528123E319644F8F00B02456 /* GoldenFindTests-Info.plist */,
+				528123E419644F8F00B02456 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		528123B819644F8F00B02456 /* GoldenFind */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 528123EB19644F8F00B02456 /* Build configuration list for PBXNativeTarget "GoldenFind" */;
+			buildPhases = (
+				528123B519644F8F00B02456 /* Sources */,
+				528123B619644F8F00B02456 /* Frameworks */,
+				528123B719644F8F00B02456 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoldenFind;
+			productName = GoldenFind;
+			productReference = 528123B919644F8F00B02456 /* GoldenFind.app */;
+			productType = "com.apple.product-type.application";
+		};
+		528123D919644F8F00B02456 /* GoldenFindTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 528123EE19644F8F00B02456 /* Build configuration list for PBXNativeTarget "GoldenFindTests" */;
+			buildPhases = (
+				528123D619644F8F00B02456 /* Sources */,
+				528123D719644F8F00B02456 /* Frameworks */,
+				528123D819644F8F00B02456 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				528123E019644F8F00B02456 /* PBXTargetDependency */,
+			);
+			name = GoldenFindTests;
+			productName = GoldenFindTests;
+			productReference = 528123DA19644F8F00B02456 /* GoldenFindTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		528123B119644F8F00B02456 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = GF;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Mokhles;
+				TargetAttributes = {
+					528123D919644F8F00B02456 = {
+						TestTargetID = 528123B819644F8F00B02456;
+					};
+				};
+			};
+			buildConfigurationList = 528123B419644F8F00B02456 /* Build configuration list for PBXProject "GoldenFind" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 528123B019644F8F00B02456;
+			productRefGroup = 528123BA19644F8F00B02456 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				528123B819644F8F00B02456 /* GoldenFind */,
+				528123D919644F8F00B02456 /* GoldenFindTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		528123B719644F8F00B02456 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				528123D519644F8F00B02456 /* Images.xcassets in Resources */,
+				528123C719644F8F00B02456 /* InfoPlist.strings in Resources */,
+				528123D019644F8F00B02456 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		528123D819644F8F00B02456 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				528123E619644F8F00B02456 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		528123B519644F8F00B02456 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				528123C919644F8F00B02456 /* main.m in Sources */,
+				528123D319644F8F00B02456 /* GFViewController.m in Sources */,
+				528123CD19644F8F00B02456 /* GFAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		528123D619644F8F00B02456 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				528123E819644F8F00B02456 /* GoldenFindTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		528123E019644F8F00B02456 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 528123B819644F8F00B02456 /* GoldenFind */;
+			targetProxy = 528123DF19644F8F00B02456 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		528123C519644F8F00B02456 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				528123C619644F8F00B02456 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		528123CE19644F8F00B02456 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				528123CF19644F8F00B02456 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		528123E419644F8F00B02456 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				528123E519644F8F00B02456 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		528123E919644F8F00B02456 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		528123EA19644F8F00B02456 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		528123EC19644F8F00B02456 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GoldenFind/GoldenFind-Prefix.pch";
+				INFOPLIST_FILE = "GoldenFind/GoldenFind-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		528123ED19644F8F00B02456 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GoldenFind/GoldenFind-Prefix.pch";
+				INFOPLIST_FILE = "GoldenFind/GoldenFind-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		528123EF19644F8F00B02456 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GoldenFind.app/GoldenFind";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GoldenFind/GoldenFind-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "GoldenFindTests/GoldenFindTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		528123F019644F8F00B02456 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GoldenFind.app/GoldenFind";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GoldenFind/GoldenFind-Prefix.pch";
+				INFOPLIST_FILE = "GoldenFindTests/GoldenFindTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		528123B419644F8F00B02456 /* Build configuration list for PBXProject "GoldenFind" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				528123E919644F8F00B02456 /* Debug */,
+				528123EA19644F8F00B02456 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		528123EB19644F8F00B02456 /* Build configuration list for PBXNativeTarget "GoldenFind" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				528123EC19644F8F00B02456 /* Debug */,
+				528123ED19644F8F00B02456 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		528123EE19644F8F00B02456 /* Build configuration list for PBXNativeTarget "GoldenFindTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				528123EF19644F8F00B02456 /* Debug */,
+				528123F019644F8F00B02456 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 528123B119644F8F00B02456 /* Project object */;
+}
