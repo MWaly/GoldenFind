@@ -7,6 +7,9 @@
 //
 
 #import "GFViewController.h"
+#import "MWCollectionView.h"
+#import "GFInteractor.h"
+
 
 @interface GFViewController ()
 
@@ -17,7 +20,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+
+    
+    // Get the data and parese it first
+    
+    MWCollectionView *collectionView=[[MWCollectionView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
+    
+    [self.view addSubview:collectionView];
 }
 
 - (void)didReceiveMemoryWarning

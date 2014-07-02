@@ -21,6 +21,14 @@
 		528123DE19644F8F00B02456 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 528123C019644F8F00B02456 /* UIKit.framework */; };
 		528123E619644F8F00B02456 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 528123E419644F8F00B02456 /* InfoPlist.strings */; };
 		528123E819644F8F00B02456 /* GoldenFindTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 528123E719644F8F00B02456 /* GoldenFindTests.m */; };
+		528123F51964648600B02456 /* GFPlace.m in Sources */ = {isa = PBXBuildFile; fileRef = 528123F41964648600B02456 /* GFPlace.m */; };
+		528123F9196466CD00B02456 /* GFPlaceWithCoordinates.m in Sources */ = {isa = PBXBuildFile; fileRef = 528123F8196466CD00B02456 /* GFPlaceWithCoordinates.m */; };
+		528123FD19649C9600B02456 /* GFInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 528123FC19649C9600B02456 /* GFInteractor.m */; };
+		5281240019649CC600B02456 /* GFPlaceViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 528123FF19649CC600B02456 /* GFPlaceViewModel.m */; };
+		5281240319649DF800B02456 /* MWCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5281240219649DF800B02456 /* MWCollectionView.m */; };
+		5281240619649EAB00B02456 /* MWCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5281240519649EAB00B02456 /* MWCollectionViewCell.m */; };
+		528DF80F1964B1CE00B9D6F2 /* MWCollectionViewCellWithImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 528DF80E1964B1CE00B9D6F2 /* MWCollectionViewCellWithImage.m */; };
+		528DF8111964B24300B9D6F2 /* MockedData.json in Resources */ = {isa = PBXBuildFile; fileRef = 528DF8101964B24300B9D6F2 /* MockedData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +61,23 @@
 		528123E319644F8F00B02456 /* GoldenFindTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoldenFindTests-Info.plist"; sourceTree = "<group>"; };
 		528123E519644F8F00B02456 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		528123E719644F8F00B02456 /* GoldenFindTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoldenFindTests.m; sourceTree = "<group>"; };
+		528123F31964648500B02456 /* GFPlace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFPlace.h; sourceTree = "<group>"; };
+		528123F41964648600B02456 /* GFPlace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFPlace.m; sourceTree = "<group>"; };
+		528123F7196466CD00B02456 /* GFPlaceWithCoordinates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFPlaceWithCoordinates.h; sourceTree = "<group>"; };
+		528123F8196466CD00B02456 /* GFPlaceWithCoordinates.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFPlaceWithCoordinates.m; sourceTree = "<group>"; };
+		528123FB19649C9600B02456 /* GFInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFInteractor.h; sourceTree = "<group>"; };
+		528123FC19649C9600B02456 /* GFInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFInteractor.m; sourceTree = "<group>"; };
+		528123FE19649CC600B02456 /* GFPlaceViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFPlaceViewModel.h; sourceTree = "<group>"; };
+		528123FF19649CC600B02456 /* GFPlaceViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFPlaceViewModel.m; sourceTree = "<group>"; };
+		5281240119649DF800B02456 /* MWCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWCollectionView.h; sourceTree = "<group>"; };
+		5281240219649DF800B02456 /* MWCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWCollectionView.m; sourceTree = "<group>"; };
+		5281240419649EAB00B02456 /* MWCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWCollectionViewCell.h; sourceTree = "<group>"; };
+		5281240519649EAB00B02456 /* MWCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWCollectionViewCell.m; sourceTree = "<group>"; };
+		528124071964A1C500B02456 /* MWCollectionViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWCollectionViewDelegate.h; sourceTree = "<group>"; };
+		528124081964A1D600B02456 /* MWCollectionViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWCollectionViewDataSource.h; sourceTree = "<group>"; };
+		528DF80D1964B1CE00B9D6F2 /* MWCollectionViewCellWithImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWCollectionViewCellWithImage.h; sourceTree = "<group>"; };
+		528DF80E1964B1CE00B9D6F2 /* MWCollectionViewCellWithImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWCollectionViewCellWithImage.m; sourceTree = "<group>"; };
+		528DF8101964B24300B9D6F2 /* MockedData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MockedData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,11 +137,12 @@
 		528123C219644F8F00B02456 /* GoldenFind */ = {
 			isa = PBXGroup;
 			children = (
-				528123CB19644F8F00B02456 /* GFAppDelegate.h */,
-				528123CC19644F8F00B02456 /* GFAppDelegate.m */,
+				528DF8121964B79E00B9D6F2 /* MWCollectionView */,
+				528123FA19649C6D00B02456 /* View */,
+				528123F6196464B200B02456 /* Controller */,
+				528123F2196458C400B02456 /* Model */,
+				528123F1196458B700B02456 /* Common */,
 				528123CE19644F8F00B02456 /* Main.storyboard */,
-				528123D119644F8F00B02456 /* GFViewController.h */,
-				528123D219644F8F00B02456 /* GFViewController.m */,
 				528123D419644F8F00B02456 /* Images.xcassets */,
 				528123C319644F8F00B02456 /* Supporting Files */,
 			);
@@ -126,6 +152,7 @@
 		528123C319644F8F00B02456 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				528DF8101964B24300B9D6F2 /* MockedData.json */,
 				528123C419644F8F00B02456 /* GoldenFind-Info.plist */,
 				528123C519644F8F00B02456 /* InfoPlist.strings */,
 				528123C819644F8F00B02456 /* main.m */,
@@ -150,6 +177,61 @@
 				528123E419644F8F00B02456 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		528123F1196458B700B02456 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				528123CB19644F8F00B02456 /* GFAppDelegate.h */,
+				528123CC19644F8F00B02456 /* GFAppDelegate.m */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		528123F2196458C400B02456 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				528123F31964648500B02456 /* GFPlace.h */,
+				528123F41964648600B02456 /* GFPlace.m */,
+				528123F7196466CD00B02456 /* GFPlaceWithCoordinates.h */,
+				528123F8196466CD00B02456 /* GFPlaceWithCoordinates.m */,
+				528123FB19649C9600B02456 /* GFInteractor.h */,
+				528123FC19649C9600B02456 /* GFInteractor.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		528123F6196464B200B02456 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				528123D119644F8F00B02456 /* GFViewController.h */,
+				528123D219644F8F00B02456 /* GFViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		528123FA19649C6D00B02456 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				528123FE19649CC600B02456 /* GFPlaceViewModel.h */,
+				528123FF19649CC600B02456 /* GFPlaceViewModel.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		528DF8121964B79E00B9D6F2 /* MWCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				5281240419649EAB00B02456 /* MWCollectionViewCell.h */,
+				5281240519649EAB00B02456 /* MWCollectionViewCell.m */,
+				528DF80D1964B1CE00B9D6F2 /* MWCollectionViewCellWithImage.h */,
+				528DF80E1964B1CE00B9D6F2 /* MWCollectionViewCellWithImage.m */,
+				528124071964A1C500B02456 /* MWCollectionViewDelegate.h */,
+				528124081964A1D600B02456 /* MWCollectionViewDataSource.h */,
+				5281240119649DF800B02456 /* MWCollectionView.h */,
+				5281240219649DF800B02456 /* MWCollectionView.m */,
+			);
+			name = MWCollectionView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +311,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				528DF8111964B24300B9D6F2 /* MockedData.json in Resources */,
 				528123D519644F8F00B02456 /* Images.xcassets in Resources */,
 				528123C719644F8F00B02456 /* InfoPlist.strings in Resources */,
 				528123D019644F8F00B02456 /* Main.storyboard in Resources */,
@@ -250,9 +333,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5281240019649CC600B02456 /* GFPlaceViewModel.m in Sources */,
 				528123C919644F8F00B02456 /* main.m in Sources */,
+				528123F51964648600B02456 /* GFPlace.m in Sources */,
 				528123D319644F8F00B02456 /* GFViewController.m in Sources */,
+				528123F9196466CD00B02456 /* GFPlaceWithCoordinates.m in Sources */,
+				5281240619649EAB00B02456 /* MWCollectionViewCell.m in Sources */,
+				528DF80F1964B1CE00B9D6F2 /* MWCollectionViewCellWithImage.m in Sources */,
 				528123CD19644F8F00B02456 /* GFAppDelegate.m in Sources */,
+				528123FD19649C9600B02456 /* GFInteractor.m in Sources */,
+				5281240319649DF800B02456 /* MWCollectionView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,6 +547,7 @@
 				528123ED19644F8F00B02456 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		528123EE19644F8F00B02456 /* Build configuration list for PBXNativeTarget "GoldenFindTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +556,7 @@
 				528123F019644F8F00B02456 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
