@@ -8,6 +8,7 @@
 //  This class represents the implemntation of GFCell used in populating the GFCollectionView and its factory interface
 
 @import UIKit;
+@import QuartzCore;
 @class MWCollectionViewCellWithImage;
 @class MWCollectionViewCellWithMap;
 

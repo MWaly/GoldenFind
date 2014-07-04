@@ -58,6 +58,8 @@
     if( _titleLabel== nil)
     {
         _titleLabel = [[UILabel alloc] initWithFrame:CGRectZero];
+        _titleLabel.numberOfLines=0;
+        [_titleLabel setFont:[UIFont fontWithName:@"Arial" size:18]];
         [self addSubview:_titleLabel];
     }
     
@@ -69,6 +71,9 @@
     if( _detailLabel== nil)
     {
         _detailLabel = [[UILabel alloc] initWithFrame:CGRectZero];
+        _detailLabel.numberOfLines=0;
+        [_detailLabel setFont:[UIFont fontWithName:@"Arial" size:14]];
+        [_titleLabel setTextColor:[UIColor redColor]];
         [self addSubview:_detailLabel];
     }
     
@@ -80,21 +85,19 @@
     
     
     if (_titleLabel) {
-        self.titleLabel.frame=CGRectMake((self.frame.size.width/2)+5,5, self.frame.size.width/2-10, (self.frame.size.height/2)-5);
-        _titleLabel.backgroundColor=[UIColor grayColor];
+        self.titleLabel.frame=CGRectMake((self.frame.size.width/4)+5,5, self.frame.size.width -(self.frame.size.width/4)-10, (self.frame.size.height/2)-5);
+        
     }
     
     if (_detailLabel) {
-        self.detailLabel.frame=CGRectMake((self.frame.size.width/2)+5, self.frame.size.height/2+5, self.frame.size.width/2-10, self.frame.size.height/2-10);
-        _detailLabel.backgroundColor=[UIColor orangeColor];
+        self.detailLabel.frame=CGRectMake((self.frame.size.width/4)+5, self.frame.size.height/2+5, self.frame.size.width -(self.frame.size.width/4)-10, self.frame.size.height/2-10);
+        
     }
     if (_cellImage) {
-        self.cellImage.frame=CGRectMake(5, (self.frame.size.height/2)+5, (self.frame.size.width/2)-20, (self.frame.size.height/2)-20);
-        _cellImage.backgroundColor=[UIColor blueColor];
+        self.cellImage.frame=CGRectMake(5,10, (self.frame.size.width/4), (self.frame.size.height/2)-10);
     }
-    if (self.frame.size.height==120) {
-        self.backgroundColor=[UIColor whiteColor];
-    }
+    self.layer.borderColor=[UIColor purpleColor].CGColor;
+    self.layer.borderWidth=0.25;
     
 }
 

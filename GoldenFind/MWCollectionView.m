@@ -67,7 +67,7 @@
     if(poolCell)
     {
         [self.reusePool removeObject:poolCell];
-        [poolCell prepareForReuse];
+        
     }
     
     return poolCell;
@@ -101,35 +101,35 @@
 
 - (NSArray *)captureTableStructure
 {
-
+    
     self.totalHeight = 0.f;
     [self.rowHeights removeAllObjects];
     
-        // Rows
-        NSInteger numberOfRows = [self.dataSource numberOfRows];
-   
-        if([self.collectionViewDelegate respondsToSelector:@selector(heightForRowAtPosition:)])
+    // Rows
+    NSInteger numberOfRows = [self.dataSource numberOfRows];
+    
+    if([self.collectionViewDelegate respondsToSelector:@selector(heightForRowAtPosition:)])
+    {
+        for(NSInteger rowIndex = 0; rowIndex < numberOfRows; rowIndex++)
         {
-            for(NSInteger rowIndex = 0; rowIndex < numberOfRows; rowIndex++)
-            {
-                
-                CGFloat rowHeight = [self.dataSource heightForRowAtPosition:rowIndex];
-                
-                self.rowHeights[rowIndex] = @(rowHeight);
-                self.totalHeight += rowHeight;
-            }
+            
+            CGFloat rowHeight = [self.dataSource heightForRowAtPosition:rowIndex];
+            
+            self.rowHeights[rowIndex] = @(rowHeight);
+            self.totalHeight += rowHeight;
         }
-        else
+    }
+    else
+    {
+        for(NSInteger rowIndex = 0; rowIndex < numberOfRows; rowIndex++)
         {
-            for(NSInteger rowIndex = 0; rowIndex < numberOfRows; rowIndex++)
-            {
-                /// Setting a default value of 40 for cell size
-                self.rowHeights[rowIndex] = @40;
-                self.totalHeight += 40;
-                           }
+            /// Setting a default value of 40 for cell size
+            self.rowHeights[rowIndex] = @40;
+            self.totalHeight += 40;
         }
-
-
+    }
+    
+    
     
     return self.rowHeights;
 }
@@ -168,43 +168,40 @@
     self.visibleCellsGlobalIndexOffset = newVisibleCellsGlobalIndexOffset;
     
     // Add
-  
     
-   
+    
+    
     NSIndexSet *visibleCellGlobalRowIndexSet = [NSIndexSet indexSetWithIndexesInRange:NSMakeRange(self.visibleCellsGlobalIndexOffset, self.visibleCells.count)];
     
     NSMutableArray *newCells = [NSMutableArray array];
     __block NSUInteger newCellsGlobalIndexOffset = 0;
-    
-    
-    
-    
-                                           CGFloat precedingRowsYOffset = 0.f;
-                                           for(NSInteger i = 0; i < [self.dataSource numberOfRows]; i++)
-                                           {
-                                                 NSUInteger globalRowIndex = i;
-                                               CGFloat rowYOffset = precedingRowsYOffset;
-                                               CGFloat rowHeight  = [self.rowHeights[i] floatValue];
-                                               
-                                               if(![visibleCellGlobalRowIndexSet containsIndex:i] && RANGES_INTERSECT(yOffset, height, rowYOffset, rowHeight))
-                                               {
-                                                   
-                                                   
-                                                   MWCollectionViewCell *cell = [self.dataSource tableView:self cellAtPosition:i];
-                                                   cell.frame = CGRectMake(0.f, rowYOffset, self.frame.size.width, rowHeight);
-                                  
-                                                   [self addSubview:cell];
-                                                   
-                                                   if(newCells.count == 0)
-                                                   {
-                                                       newCellsGlobalIndexOffset = globalRowIndex;
-                                                   }
-                                                   [newCells addObject:cell];
-                                               }
-                                               
-                                               precedingRowsYOffset += rowHeight;
-                                           }
 
+    CGFloat precedingRowsYOffset = 0.f;
+    for(NSInteger i = 0; i < [self.dataSource numberOfRows]; i++)
+    {
+        NSUInteger globalRowIndex = i;
+        CGFloat rowYOffset = precedingRowsYOffset;
+        CGFloat rowHeight  = [self.rowHeights[i] floatValue];
+        
+        if(![visibleCellGlobalRowIndexSet containsIndex:i] && RANGES_INTERSECT(yOffset, height, rowYOffset, rowHeight))
+        {
+            
+            
+            MWCollectionViewCell *cell = [self.dataSource tableView:self cellAtPosition:i];
+            cell.frame = CGRectMake(0.f, rowYOffset, self.frame.size.width, rowHeight);
+            
+            [self addSubview:cell];
+            
+            if(newCells.count == 0)
+            {
+                newCellsGlobalIndexOffset = globalRowIndex;
+            }
+            [newCells addObject:cell];
+        }
+        
+        precedingRowsYOffset += rowHeight;
+    }
+    
     
     if(newCells.count > 0)
     {

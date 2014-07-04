@@ -30,7 +30,7 @@
     MWCollectionView *collectionView=[[MWCollectionView alloc]initWithFrame:CGRectMake(0, 20, self.view.frame.size.width, self.view.frame.size.height-20)];
     collectionView.collectionViewDelegate=self;
     collectionView.dataSource=self;
-    collectionView.backgroundColor=[UIColor redColor];
+    
     
     
     [self.view addSubview:collectionView];
@@ -61,6 +61,7 @@
         MWCollectionViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseIdentifier];
         if (cell == nil) {
             cell = [[MWCollectionViewCell alloc]initWithReuseIdentifier:reuseIdentifier cellType:MAPCELL];
+            NSLog(@"New one map");
 
         }
         [cell setAttributes:@{@"titleLabel":currentPlace.titleText,@"detail":currentPlace.detailText,@"lon":[currentPlace valueForKey:@"lon"],@"lat":[currentPlace valueForKey:@"lat"]}];
@@ -73,6 +74,7 @@
             MWCollectionViewCell *imageCell = [tableView dequeueReusableCellWithIdentifier:reuseIdentifier2];
             if (imageCell == nil) {
              imageCell = [[MWCollectionViewCell alloc]initWithReuseIdentifier:reuseIdentifier2 cellType:IMAGECELL];
+                   NSLog(@"New one image");
                 
             }
        [imageCell setAttributes:@{@"titleLabel":currentPlace.titleText,@"detail":currentPlace.detailText,@"image":[currentPlace valueForKey:@"placeImage"]}];

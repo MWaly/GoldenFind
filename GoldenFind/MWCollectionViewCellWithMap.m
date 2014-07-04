@@ -56,6 +56,7 @@
     if( _titleLabel== nil)
     {
        _titleLabel = [[UILabel alloc] initWithFrame:CGRectZero];
+        [_titleLabel setTextColor:[UIColor redColor]];
         [self addSubview:_titleLabel];
     }
     
@@ -78,18 +79,20 @@
     
 
     if (_titleLabel) {
-        self.titleLabel.frame=CGRectMake((self.frame.size.width/2)+5,5, self.frame.size.width/2-10, (self.frame.size.height/2)-5);
-        _titleLabel.backgroundColor=[UIColor yellowColor];
+        self.titleLabel.frame=CGRectMake((self.frame.size.width/4)+5,5, self.frame.size.width -(self.frame.size.width/4)-10, (self.frame.size.height/2)-5);
+        
     }
     
     if (_detailLabel) {
-        self.detailLabel.frame=CGRectMake((self.frame.size.width/2)+5, self.frame.size.height/2+5, self.frame.size.width/2-10, self.frame.size.height/2-10);
-        _detailLabel.backgroundColor=[UIColor greenColor];
+        self.detailLabel.frame=CGRectMake((self.frame.size.width/4)+5, self.frame.size.height/2+5, self.frame.size.width -(self.frame.size.width/4)-10, self.frame.size.height/2-10);
+       
     }
     if (_map) {
-        self.map.frame=CGRectMake(5, (self.frame.size.height/2)+5, (self.frame.size.width/2)-20, (self.frame.size.height/2)-20);
-        _map.backgroundColor=[UIColor blueColor];
+        self.map.frame=CGRectMake(5,10, (self.frame.size.width/4), (self.frame.size.height/2)-10);
+
     }
+    self.layer.borderColor=[UIColor grayColor].CGColor;
+    self.layer.borderWidth=0.25;
     
 }
 

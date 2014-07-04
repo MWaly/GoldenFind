@@ -35,8 +35,8 @@
 
 
 /*
-The description Methods for Debugging Purposes
-*/
+ The description Methods for Debugging Purposes/Users/macbookpro/Desktop/Apps/GoldenFind/GoldenFind/MWCollectionViewCell.m
+ */
 
 - (NSString*)description {
     return [NSString stringWithFormat:@"<%@: %p, \"%@ type %li \">",
