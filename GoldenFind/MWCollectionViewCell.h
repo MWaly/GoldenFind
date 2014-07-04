@@ -7,7 +7,9 @@
 
 //  This class represents the implemntation of GFCell used in populating the GFCollectionView and its factory interface
 
-#import <UIKit/UIKit.h>
+@import UIKit;
+@class MWCollectionViewCellWithImage;
+@class MWCollectionViewCellWithMap;
 
 /**
  *  Image type property
@@ -22,13 +24,17 @@ typedef enum  {
 @interface MWCollectionViewCell : UIView
 
 
-@property (nonatomic, readwrite)UILabel* titleLabel;
-@property (nonatomic, readwrite)UILabel* detailLabel;
-@property (nonatomic, readwrite)NSString* cellIdentfier;
-@property (nonatomic, readonly , assign ) NSInteger cellType;
+@property (nonatomic, readwrite) UILabel* titleLabel;
+@property (nonatomic, readwrite) UILabel* detailLabel;
+@property (nonatomic, readwrite) NSString* reuseIdentifier;
+@property (nonatomic, readonly , assign ) ImageType cellType;
 @property (nonatomic, readonly , assign ) NSInteger cellHeight;
+@property (nonatomic, readwrite) NSDictionary* attributes;
 
 
-+ (instancetype)initWithReuseIdentifier:(NSString *)reuseIdentifier cellType:(ImageType)cellType;
+
+- (instancetype)initWithReuseIdentifier:(NSString *)reuseIdentifier cellType:(ImageType)cellType ;
+
+- (void) prepareForReuse;
 
 @end

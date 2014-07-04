@@ -10,14 +10,16 @@
 This class acts as the business engine for the application by parsing the JSON data and converting them to usable app data
 */
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 @class GFPlace;
+
+
 @interface GFInteractor : NSObject
 
+// returns an array full of places from file 
++ (NSArray*)loadPlacesOffline;
 
-+ (instancetype)initPlacesFromString:(NSString*)places;
 
-// Hold The Business 
-+ (GFPlace*)mapDataToAppModel:(NSObject*)JsonData;
+
 
 @end

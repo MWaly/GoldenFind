@@ -1,35 +1,32 @@
 //
-//  GFPlaceWithCoordinates.m
+//  GFPlaceWithImage.m
 //  GoldenFind
 //
-//  Created by Mohamed Mokhles Waly on 7/2/14.
+//  Created by Mohamed Mokhles Waly on 7/3/14.
 //  Copyright (c) 2014 Mokhles. All rights reserved.
 //
 
-#import "GFPlaceWithCoordinates.h"
+#import "GFPlaceWithImage.h"
 
 
-@interface GFPlaceWithCoordinates ()
+@interface GFPlaceWithImage ()
 // Private setter
-@property (nonatomic, readwrite)NSNumber *lon;
-@property (nonatomic, readwrite)NSNumber *lat;
+@property (nonatomic,readwrite)UIImage *placeImage;
 @property (nonatomic , readwrite) NSString* titleText;
 @property (nonatomic , readwrite) NSString* detailText;
 @property (nonatomic , readwrite ) PlaceType type;
 
 @end
 
-@implementation GFPlaceWithCoordinates
+@implementation GFPlaceWithImage
 
-
-
-@dynamic titleText;
+@dynamic  titleText;
 @dynamic detailText;
 @dynamic type;
 
 + (instancetype)createPlaceWithDictionary:(NSDictionary*)dict
 {
-    return [[GFPlaceWithCoordinates alloc] initWithDictionary:dict];
+    return [[GFPlaceWithImage alloc] initWithDictionary:dict];
 }
 
 - (instancetype)initWithDictionary:(NSDictionary *)dict
@@ -39,10 +36,10 @@
         
         self.titleText=dict[@"company"];
         self.detailText=dict[@"detail"];
-        self.lon=dict[@"lan"];
-        self.lat=dict[@"lat"];
-        self.type=MAP;
-        
+        NSString *imageFilePath=[[NSBundle mainBundle] pathForResource:dict[@"image"] ofType:@"png"];
+        self.placeImage=[UIImage imageWithContentsOfFile:imageFilePath];
+        self.type=IMAGE;
+
     }
     return self;
 }

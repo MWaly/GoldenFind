@@ -7,6 +7,8 @@
 //
 
 #import "MWCollectionViewCell.h"
+#import "MWCollectionViewCellWithImage.h"
+#import "MWCollectionViewCellWithMap.h"
 
 @implementation MWCollectionViewCell
 
@@ -19,14 +21,17 @@
     return self;
 }
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
+- (instancetype)initWithReuseIdentifier:(NSString *)reuseIdentifier cellType:(ImageType)cellType
 {
-    // Drawing code
+    if (cellType==IMAGECELL) {
+        return [[MWCollectionViewCellWithImage alloc]initWithReuseIdentifier:reuseIdentifier ];
+        
+    }
+    else
+    {
+        return [[MWCollectionViewCellWithMap alloc]initWithReuseIdentifier:reuseIdentifier ];
+    }
 }
-*/
 
 
 /*
@@ -37,4 +42,5 @@ The description Methods for Debugging Purposes
     return [NSString stringWithFormat:@"<%@: %p, \"%@ type %li \">",
             [self class], self, _titleLabel.text ,(long)_cellType];
 }
+- (void) prepareForReuse{}
 @end

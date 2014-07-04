@@ -29,6 +29,14 @@
 		5281240619649EAB00B02456 /* MWCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5281240519649EAB00B02456 /* MWCollectionViewCell.m */; };
 		528DF80F1964B1CE00B9D6F2 /* MWCollectionViewCellWithImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 528DF80E1964B1CE00B9D6F2 /* MWCollectionViewCellWithImage.m */; };
 		528DF8111964B24300B9D6F2 /* MockedData.json in Resources */ = {isa = PBXBuildFile; fileRef = 528DF8101964B24300B9D6F2 /* MockedData.json */; };
+		528DF81919654FD100B9D6F2 /* image5.png in Resources */ = {isa = PBXBuildFile; fileRef = 528DF81319654FD100B9D6F2 /* image5.png */; };
+		528DF81A19654FD100B9D6F2 /* image3.png in Resources */ = {isa = PBXBuildFile; fileRef = 528DF81419654FD100B9D6F2 /* image3.png */; };
+		528DF81B19654FD100B9D6F2 /* image2.png in Resources */ = {isa = PBXBuildFile; fileRef = 528DF81519654FD100B9D6F2 /* image2.png */; };
+		528DF81C19654FD100B9D6F2 /* image4.png in Resources */ = {isa = PBXBuildFile; fileRef = 528DF81619654FD100B9D6F2 /* image4.png */; };
+		528DF81E19654FD100B9D6F2 /* image1.png in Resources */ = {isa = PBXBuildFile; fileRef = 528DF81819654FD100B9D6F2 /* image1.png */; };
+		528DF8221965515E00B9D6F2 /* GFPlaceWithImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 528DF8211965515E00B9D6F2 /* GFPlaceWithImage.m */; };
+		528DF82A196584AA00B9D6F2 /* MWCollectionViewCellWithMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 528DF829196584AA00B9D6F2 /* MWCollectionViewCellWithMap.m */; };
+		528DF82F19658CBB00B9D6F2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 528DF82E19658CBB00B9D6F2 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +86,16 @@
 		528DF80D1964B1CE00B9D6F2 /* MWCollectionViewCellWithImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWCollectionViewCellWithImage.h; sourceTree = "<group>"; };
 		528DF80E1964B1CE00B9D6F2 /* MWCollectionViewCellWithImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWCollectionViewCellWithImage.m; sourceTree = "<group>"; };
 		528DF8101964B24300B9D6F2 /* MockedData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MockedData.json; sourceTree = "<group>"; };
+		528DF81319654FD100B9D6F2 /* image5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image5.png; sourceTree = "<group>"; };
+		528DF81419654FD100B9D6F2 /* image3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image3.png; sourceTree = "<group>"; };
+		528DF81519654FD100B9D6F2 /* image2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image2.png; sourceTree = "<group>"; };
+		528DF81619654FD100B9D6F2 /* image4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image4.png; sourceTree = "<group>"; };
+		528DF81819654FD100B9D6F2 /* image1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image1.png; sourceTree = "<group>"; };
+		528DF8201965515E00B9D6F2 /* GFPlaceWithImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFPlaceWithImage.h; sourceTree = "<group>"; };
+		528DF8211965515E00B9D6F2 /* GFPlaceWithImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFPlaceWithImage.m; sourceTree = "<group>"; };
+		528DF828196584AA00B9D6F2 /* MWCollectionViewCellWithMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWCollectionViewCellWithMap.h; sourceTree = "<group>"; };
+		528DF829196584AA00B9D6F2 /* MWCollectionViewCellWithMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWCollectionViewCellWithMap.m; sourceTree = "<group>"; };
+		528DF82E19658CBB00B9D6F2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				528DF82F19658CBB00B9D6F2 /* MapKit.framework in Frameworks */,
 				528123BF19644F8F00B02456 /* CoreGraphics.framework in Frameworks */,
 				528123C119644F8F00B02456 /* UIKit.framework in Frameworks */,
 				528123BD19644F8F00B02456 /* Foundation.framework in Frameworks */,
@@ -126,6 +145,7 @@
 		528123BB19644F8F00B02456 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				528DF82E19658CBB00B9D6F2 /* MapKit.framework */,
 				528123BC19644F8F00B02456 /* Foundation.framework */,
 				528123BE19644F8F00B02456 /* CoreGraphics.framework */,
 				528123C019644F8F00B02456 /* UIKit.framework */,
@@ -152,7 +172,6 @@
 		528123C319644F8F00B02456 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				528DF8101964B24300B9D6F2 /* MockedData.json */,
 				528123C419644F8F00B02456 /* GoldenFind-Info.plist */,
 				528123C519644F8F00B02456 /* InfoPlist.strings */,
 				528123C819644F8F00B02456 /* main.m */,
@@ -197,6 +216,8 @@
 				528123F8196466CD00B02456 /* GFPlaceWithCoordinates.m */,
 				528123FB19649C9600B02456 /* GFInteractor.h */,
 				528123FC19649C9600B02456 /* GFInteractor.m */,
+				528DF8201965515E00B9D6F2 /* GFPlaceWithImage.h */,
+				528DF8211965515E00B9D6F2 /* GFPlaceWithImage.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -213,6 +234,7 @@
 		528123FA19649C6D00B02456 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				528DF81F19654FFA00B9D6F2 /* resources */,
 				528123FE19649CC600B02456 /* GFPlaceViewModel.h */,
 				528123FF19649CC600B02456 /* GFPlaceViewModel.m */,
 			);
@@ -222,16 +244,55 @@
 		528DF8121964B79E00B9D6F2 /* MWCollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				528DF82D196584CC00B9D6F2 /* Delegate & Datasource */,
+				528DF82C196584BB00B9D6F2 /* Table */,
+				528DF82B196584B500B9D6F2 /* Cell */,
+			);
+			name = MWCollectionView;
+			sourceTree = "<group>";
+		};
+		528DF81F19654FFA00B9D6F2 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				528DF81319654FD100B9D6F2 /* image5.png */,
+				528DF81419654FD100B9D6F2 /* image3.png */,
+				528DF81519654FD100B9D6F2 /* image2.png */,
+				528DF81619654FD100B9D6F2 /* image4.png */,
+				528DF81819654FD100B9D6F2 /* image1.png */,
+				528DF8101964B24300B9D6F2 /* MockedData.json */,
+			);
+			name = resources;
+			sourceTree = "<group>";
+		};
+		528DF82B196584B500B9D6F2 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
 				5281240419649EAB00B02456 /* MWCollectionViewCell.h */,
 				5281240519649EAB00B02456 /* MWCollectionViewCell.m */,
 				528DF80D1964B1CE00B9D6F2 /* MWCollectionViewCellWithImage.h */,
 				528DF80E1964B1CE00B9D6F2 /* MWCollectionViewCellWithImage.m */,
-				528124071964A1C500B02456 /* MWCollectionViewDelegate.h */,
-				528124081964A1D600B02456 /* MWCollectionViewDataSource.h */,
+				528DF828196584AA00B9D6F2 /* MWCollectionViewCellWithMap.h */,
+				528DF829196584AA00B9D6F2 /* MWCollectionViewCellWithMap.m */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		528DF82C196584BB00B9D6F2 /* Table */ = {
+			isa = PBXGroup;
+			children = (
 				5281240119649DF800B02456 /* MWCollectionView.h */,
 				5281240219649DF800B02456 /* MWCollectionView.m */,
 			);
-			name = MWCollectionView;
+			name = Table;
+			sourceTree = "<group>";
+		};
+		528DF82D196584CC00B9D6F2 /* Delegate & Datasource */ = {
+			isa = PBXGroup;
+			children = (
+				528124071964A1C500B02456 /* MWCollectionViewDelegate.h */,
+				528124081964A1D600B02456 /* MWCollectionViewDataSource.h */,
+			);
+			name = "Delegate & Datasource";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,9 +373,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				528DF8111964B24300B9D6F2 /* MockedData.json in Resources */,
+				528DF81E19654FD100B9D6F2 /* image1.png in Resources */,
+				528DF81C19654FD100B9D6F2 /* image4.png in Resources */,
+				528DF81A19654FD100B9D6F2 /* image3.png in Resources */,
+				528DF81919654FD100B9D6F2 /* image5.png in Resources */,
 				528123D519644F8F00B02456 /* Images.xcassets in Resources */,
 				528123C719644F8F00B02456 /* InfoPlist.strings in Resources */,
 				528123D019644F8F00B02456 /* Main.storyboard in Resources */,
+				528DF81B19654FD100B9D6F2 /* image2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,7 +406,9 @@
 				528123F9196466CD00B02456 /* GFPlaceWithCoordinates.m in Sources */,
 				5281240619649EAB00B02456 /* MWCollectionViewCell.m in Sources */,
 				528DF80F1964B1CE00B9D6F2 /* MWCollectionViewCellWithImage.m in Sources */,
+				528DF8221965515E00B9D6F2 /* GFPlaceWithImage.m in Sources */,
 				528123CD19644F8F00B02456 /* GFAppDelegate.m in Sources */,
+				528DF82A196584AA00B9D6F2 /* MWCollectionViewCellWithMap.m in Sources */,
 				528123FD19649C9600B02456 /* GFInteractor.m in Sources */,
 				5281240319649DF800B02456 /* MWCollectionView.m in Sources */,
 			);

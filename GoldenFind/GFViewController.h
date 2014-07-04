@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface GFViewController : UIViewController
+#import "MWCollectionViewDataSource.h"
+#import "MWCollectionViewDelegate.h"
+@interface GFViewController : UIViewController <MWCollectionViewDataSource,MWCollectionViewDelegate>
 
 @end

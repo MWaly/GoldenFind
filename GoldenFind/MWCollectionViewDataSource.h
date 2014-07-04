@@ -6,8 +6,16 @@
 //  Copyright (c) 2014 Mokhles. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import Foundation;
+@class MWCollectionView;
+@class MWCollectionViewCell;
 
 @protocol MWCollectionViewDataSource <NSObject>
+@required
+- (NSInteger)numberOfRows;
+- (MWCollectionViewCell *)tableView:(MWCollectionView *)tableView cellAtPosition:(NSInteger)rowPosition;
+@optional
+- (NSInteger)heightForRowAtPosition:(NSInteger)rowPosition;
+
 
 @end

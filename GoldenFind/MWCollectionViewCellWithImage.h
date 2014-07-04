@@ -10,5 +10,8 @@
 
 @interface MWCollectionViewCellWithImage : MWCollectionViewCell
 
-@property(nonatomic , readonly) UIImageView *cellImage;
+@property(nonatomic ,readwrite) UIImageView *cellImage;
+
+- (instancetype)initWithReuseIdentifier:(NSString *)reuseIdentifier;
+
 @end
