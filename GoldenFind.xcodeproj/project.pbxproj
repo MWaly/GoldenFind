@@ -25,9 +25,9 @@
 		528123F9196466CD00B02456 /* GFPlaceWithCoordinates.m in Sources */ = {isa = PBXBuildFile; fileRef = 528123F8196466CD00B02456 /* GFPlaceWithCoordinates.m */; };
 		528123FD19649C9600B02456 /* GFInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 528123FC19649C9600B02456 /* GFInteractor.m */; };
 		5281240019649CC600B02456 /* GFPlaceViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 528123FF19649CC600B02456 /* GFPlaceViewModel.m */; };
-		5281240319649DF800B02456 /* MWCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5281240219649DF800B02456 /* MWCollectionView.m */; };
-		5281240619649EAB00B02456 /* MWCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5281240519649EAB00B02456 /* MWCollectionViewCell.m */; };
-		528DF80F1964B1CE00B9D6F2 /* MWCollectionViewCellWithImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 528DF80E1964B1CE00B9D6F2 /* MWCollectionViewCellWithImage.m */; };
+		5281240319649DF800B02456 /* MWTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5281240219649DF800B02456 /* MWTableView.m */; };
+		5281240619649EAB00B02456 /* MWTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5281240519649EAB00B02456 /* MWTableViewCell.m */; };
+		528DF80F1964B1CE00B9D6F2 /* MWTableViewCellWithImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 528DF80E1964B1CE00B9D6F2 /* MWTableViewCellWithImage.m */; };
 		528DF8111964B24300B9D6F2 /* MockedData.json in Resources */ = {isa = PBXBuildFile; fileRef = 528DF8101964B24300B9D6F2 /* MockedData.json */; };
 		528DF81919654FD100B9D6F2 /* image5.png in Resources */ = {isa = PBXBuildFile; fileRef = 528DF81319654FD100B9D6F2 /* image5.png */; };
 		528DF81A19654FD100B9D6F2 /* image3.png in Resources */ = {isa = PBXBuildFile; fileRef = 528DF81419654FD100B9D6F2 /* image3.png */; };
@@ -35,8 +35,9 @@
 		528DF81C19654FD100B9D6F2 /* image4.png in Resources */ = {isa = PBXBuildFile; fileRef = 528DF81619654FD100B9D6F2 /* image4.png */; };
 		528DF81E19654FD100B9D6F2 /* image1.png in Resources */ = {isa = PBXBuildFile; fileRef = 528DF81819654FD100B9D6F2 /* image1.png */; };
 		528DF8221965515E00B9D6F2 /* GFPlaceWithImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 528DF8211965515E00B9D6F2 /* GFPlaceWithImage.m */; };
-		528DF82A196584AA00B9D6F2 /* MWCollectionViewCellWithMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 528DF829196584AA00B9D6F2 /* MWCollectionViewCellWithMap.m */; };
+		528DF82A196584AA00B9D6F2 /* MWTableViewCellWithMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 528DF829196584AA00B9D6F2 /* MWTableViewCellWithMap.m */; };
 		528DF82F19658CBB00B9D6F2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 528DF82E19658CBB00B9D6F2 /* MapKit.framework */; };
+		52A937541968946900B974CB /* MWNotifications.m in Sources */ = {isa = PBXBuildFile; fileRef = 52A937531968946900B974CB /* MWNotifications.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,14 +78,14 @@
 		528123FC19649C9600B02456 /* GFInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFInteractor.m; sourceTree = "<group>"; };
 		528123FE19649CC600B02456 /* GFPlaceViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFPlaceViewModel.h; sourceTree = "<group>"; };
 		528123FF19649CC600B02456 /* GFPlaceViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFPlaceViewModel.m; sourceTree = "<group>"; };
-		5281240119649DF800B02456 /* MWCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWCollectionView.h; sourceTree = "<group>"; };
-		5281240219649DF800B02456 /* MWCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWCollectionView.m; sourceTree = "<group>"; };
-		5281240419649EAB00B02456 /* MWCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWCollectionViewCell.h; sourceTree = "<group>"; };
-		5281240519649EAB00B02456 /* MWCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWCollectionViewCell.m; sourceTree = "<group>"; };
-		528124071964A1C500B02456 /* MWCollectionViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWCollectionViewDelegate.h; sourceTree = "<group>"; };
-		528124081964A1D600B02456 /* MWCollectionViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWCollectionViewDataSource.h; sourceTree = "<group>"; };
-		528DF80D1964B1CE00B9D6F2 /* MWCollectionViewCellWithImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWCollectionViewCellWithImage.h; sourceTree = "<group>"; };
-		528DF80E1964B1CE00B9D6F2 /* MWCollectionViewCellWithImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWCollectionViewCellWithImage.m; sourceTree = "<group>"; };
+		5281240119649DF800B02456 /* MWTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWTableView.h; sourceTree = "<group>"; };
+		5281240219649DF800B02456 /* MWTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWTableView.m; sourceTree = "<group>"; };
+		5281240419649EAB00B02456 /* MWTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWTableViewCell.h; sourceTree = "<group>"; };
+		5281240519649EAB00B02456 /* MWTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWTableViewCell.m; sourceTree = "<group>"; };
+		528124071964A1C500B02456 /* MWTableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWTableViewDelegate.h; sourceTree = "<group>"; };
+		528124081964A1D600B02456 /* MWTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWTableViewDataSource.h; sourceTree = "<group>"; };
+		528DF80D1964B1CE00B9D6F2 /* MWTableViewCellWithImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWTableViewCellWithImage.h; sourceTree = "<group>"; };
+		528DF80E1964B1CE00B9D6F2 /* MWTableViewCellWithImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWTableViewCellWithImage.m; sourceTree = "<group>"; };
 		528DF8101964B24300B9D6F2 /* MockedData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MockedData.json; sourceTree = "<group>"; };
 		528DF81319654FD100B9D6F2 /* image5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image5.png; sourceTree = "<group>"; };
 		528DF81419654FD100B9D6F2 /* image3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image3.png; sourceTree = "<group>"; };
@@ -93,10 +94,12 @@
 		528DF81819654FD100B9D6F2 /* image1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image1.png; sourceTree = "<group>"; };
 		528DF8201965515E00B9D6F2 /* GFPlaceWithImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFPlaceWithImage.h; sourceTree = "<group>"; };
 		528DF8211965515E00B9D6F2 /* GFPlaceWithImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFPlaceWithImage.m; sourceTree = "<group>"; };
-		528DF828196584AA00B9D6F2 /* MWCollectionViewCellWithMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWCollectionViewCellWithMap.h; sourceTree = "<group>"; };
-		528DF829196584AA00B9D6F2 /* MWCollectionViewCellWithMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWCollectionViewCellWithMap.m; sourceTree = "<group>"; };
+		528DF828196584AA00B9D6F2 /* MWTableViewCellWithMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWTableViewCellWithMap.h; sourceTree = "<group>"; };
+		528DF829196584AA00B9D6F2 /* MWTableViewCellWithMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWTableViewCellWithMap.m; sourceTree = "<group>"; };
 		528DF82E19658CBB00B9D6F2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		52A937511967FB5100B974CB /* MWDefintions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWDefintions.h; sourceTree = "<group>"; };
+		52A937521968946900B974CB /* MWNotifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWNotifications.h; sourceTree = "<group>"; };
+		52A937531968946900B974CB /* MWNotifications.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWNotifications.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -268,12 +271,12 @@
 		528DF82B196584B500B9D6F2 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				5281240419649EAB00B02456 /* MWCollectionViewCell.h */,
-				5281240519649EAB00B02456 /* MWCollectionViewCell.m */,
-				528DF80D1964B1CE00B9D6F2 /* MWCollectionViewCellWithImage.h */,
-				528DF80E1964B1CE00B9D6F2 /* MWCollectionViewCellWithImage.m */,
-				528DF828196584AA00B9D6F2 /* MWCollectionViewCellWithMap.h */,
-				528DF829196584AA00B9D6F2 /* MWCollectionViewCellWithMap.m */,
+				5281240419649EAB00B02456 /* MWTableViewCell.h */,
+				5281240519649EAB00B02456 /* MWTableViewCell.m */,
+				528DF80D1964B1CE00B9D6F2 /* MWTableViewCellWithImage.h */,
+				528DF80E1964B1CE00B9D6F2 /* MWTableViewCellWithImage.m */,
+				528DF828196584AA00B9D6F2 /* MWTableViewCellWithMap.h */,
+				528DF829196584AA00B9D6F2 /* MWTableViewCellWithMap.m */,
 			);
 			name = Cell;
 			sourceTree = "<group>";
@@ -281,8 +284,8 @@
 		528DF82C196584BB00B9D6F2 /* Table */ = {
 			isa = PBXGroup;
 			children = (
-				5281240119649DF800B02456 /* MWCollectionView.h */,
-				5281240219649DF800B02456 /* MWCollectionView.m */,
+				5281240119649DF800B02456 /* MWTableView.h */,
+				5281240219649DF800B02456 /* MWTableView.m */,
 				52A937511967FB5100B974CB /* MWDefintions.h */,
 			);
 			name = Table;
@@ -291,8 +294,10 @@
 		528DF82D196584CC00B9D6F2 /* Delegate & Datasource */ = {
 			isa = PBXGroup;
 			children = (
-				528124071964A1C500B02456 /* MWCollectionViewDelegate.h */,
-				528124081964A1D600B02456 /* MWCollectionViewDataSource.h */,
+				528124071964A1C500B02456 /* MWTableViewDelegate.h */,
+				528124081964A1D600B02456 /* MWTableViewDataSource.h */,
+				52A937521968946900B974CB /* MWNotifications.h */,
+				52A937531968946900B974CB /* MWNotifications.m */,
 			);
 			name = "Delegate & Datasource";
 			sourceTree = "<group>";
@@ -402,17 +407,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				5281240019649CC600B02456 /* GFPlaceViewModel.m in Sources */,
+				52A937541968946900B974CB /* MWNotifications.m in Sources */,
 				528123C919644F8F00B02456 /* main.m in Sources */,
 				528123F51964648600B02456 /* GFPlace.m in Sources */,
 				528123D319644F8F00B02456 /* GFViewController.m in Sources */,
 				528123F9196466CD00B02456 /* GFPlaceWithCoordinates.m in Sources */,
-				5281240619649EAB00B02456 /* MWCollectionViewCell.m in Sources */,
-				528DF80F1964B1CE00B9D6F2 /* MWCollectionViewCellWithImage.m in Sources */,
+				5281240619649EAB00B02456 /* MWTableViewCell.m in Sources */,
+				528DF80F1964B1CE00B9D6F2 /* MWTableViewCellWithImage.m in Sources */,
 				528DF8221965515E00B9D6F2 /* GFPlaceWithImage.m in Sources */,
 				528123CD19644F8F00B02456 /* GFAppDelegate.m in Sources */,
-				528DF82A196584AA00B9D6F2 /* MWCollectionViewCellWithMap.m in Sources */,
+				528DF82A196584AA00B9D6F2 /* MWTableViewCellWithMap.m in Sources */,
 				528123FD19649C9600B02456 /* GFInteractor.m in Sources */,
-				5281240319649DF800B02456 /* MWCollectionView.m in Sources */,
+				5281240319649DF800B02456 /* MWTableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

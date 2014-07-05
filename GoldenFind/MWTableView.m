@@ -1,5 +1,5 @@
 //
-//  GFCollectionViewController.m
+//  MWTableView.h
 //  GoldenFind
 //
 //  Created by Mohamed Mokhles Waly on 7/2/14.
@@ -8,11 +8,11 @@
 
 
 
-#import "MWCollectionView.h"
-#import "MWCollectionViewCell.h"
+#import "MWTableView.h"
+#import "MWTableViewCell.h"
 
 #define RANGES_INTERSECT(location1, length1, location2, length2) ((location1 + length1 >= location2) && (location2 + length2 >= location1))
-@interface MWCollectionView ()
+@interface MWTableView ()
 
 //Data which will be displayed by the table
 @property (nonatomic) NSArray *tableData;
@@ -53,10 +53,10 @@
  *  @param cell            Cell to be inserted
  *  @param reuseIdentifier String to identify the Cell
  */
-- (void)enqueueReusableCell:(MWCollectionViewCell *)cell withIdentifier:(NSString *)reuseIdentifier;
+- (void)enqueueReusableCell:(MWTableViewCell *)cell withIdentifier:(NSString *)reuseIdentifier;
 
 @end
-@implementation MWCollectionView
+@implementation MWTableView
 
 - (id)initWithFrame:(CGRect)frame {
 	self = [super initWithFrame:frame];
@@ -64,14 +64,15 @@
 		self.visibleCells  = [@[] mutableCopy];
 		self.reusePool    = [NSMutableSet set];
 		self.rowHeights = [@[] mutableCopy];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didDeleteCellWithPosition:) name:MWDidDeleteACell object:nil];
 	}
 	return self;
 }
 
-- (MWCollectionViewCell *)dequeueReusableCellWithIdentifier:(NSString *)reuseIdentifier {
-	__block MWCollectionViewCell *poolCell = nil;
+- (MWTableViewCell *)dequeueReusableCellWithIdentifier:(NSString *)reuseIdentifier {
+	__block MWTableViewCell *poolCell = nil;
     
-	[self.reusePool enumerateObjectsUsingBlock: ^(MWCollectionViewCell *cell, BOOL *stop) {
+	[self.reusePool enumerateObjectsUsingBlock: ^(MWTableViewCell *cell, BOOL *stop) {
 	    if ([cell.reuseIdentifier isEqualToString:reuseIdentifier]) {
 	        poolCell = cell;
 	        *stop = YES;
@@ -100,13 +101,19 @@
 	self.tableData = [self captureTableStructure];
     
 	self.contentSize = CGSizeMake(self.bounds.size.width, self.totalHeight);
+    
 }
 
-#pragma mark - Private Methods
+#pragma mark - Private Methods -
 
-- (void)enqueueReusableCell:(MWCollectionViewCell *)cell withIdentifier:(NSString *)reuseIdentifier {
+- (void)enqueueReusableCell:(MWTableViewCell *)cell withIdentifier:(NSString *)reuseIdentifier {
 	cell.reuseIdentifier = reuseIdentifier;
-	[self.reusePool addObject:cell];
+  /*
+    if ([cell isKindOfClass:[MWTableViewCellWithImage class]]) {
+        cell.im
+    }
+   */
+   	[self.reusePool addObject:cell];
 }
 
 - (NSArray *)captureTableStructure {
@@ -137,14 +144,15 @@
 	return self.rowHeights;
 }
 
-#pragma mark Layout Methods
+#pragma mark Layout Methods -
+
 
 - (void)layoutTableForYOffset:(CGFloat)yOffset height:(CGFloat)height {
 	// Remove
 	NSMutableArray *newVisibleCells = [@[] mutableCopy];
 	__block NSUInteger newVisibleCellsGlobalIndexOffset = self.visibleCellsGlobalIndexOffset;
     
-	[self.visibleCells enumerateObjectsUsingBlock: ^(MWCollectionViewCell *cell, NSUInteger idx, BOOL *stop) {
+	[self.visibleCells enumerateObjectsUsingBlock: ^(MWTableViewCell *cell, NSUInteger idx, BOOL *stop) {
 	    CGFloat cellYOffset = CGRectGetMinY(cell.frame);
 	    CGFloat cellHeight  = CGRectGetHeight(cell.frame);
         
@@ -161,8 +169,8 @@
     
 	[self.visibleCells removeObjectsInArray:newVisibleCells];
     
-	[self.visibleCells enumerateObjectsUsingBlock: ^(MWCollectionViewCell *cell, NSUInteger idx, BOOL *stop) {
-	    [self enqueueReusableCell:cell withIdentifier:cell.reuseIdentifier];
+	[self.visibleCells enumerateObjectsUsingBlock: ^(MWTableViewCell *cell, NSUInteger idx, BOOL *stop) {
+     	    [self enqueueReusableCell:cell withIdentifier:cell.reuseIdentifier];
 	    [cell removeFromSuperview];
 	}
      
@@ -187,7 +195,7 @@
 		CGFloat rowHeight  = [self.rowHeights[i] floatValue];
         
 		if (![visibleCellGlobalRowIndexSet containsIndex:i] && RANGES_INTERSECT(yOffset, height, rowYOffset, rowHeight)) {
-			MWCollectionViewCell *cell = [self.dataSource tableView:self cellAtPosition:i];
+			MWTableViewCell *cell = [self.dataSource tableView:self cellAtPosition:i];
 			cell.frame = CGRectMake(0.f, rowYOffset, self.frame.size.width, rowHeight);
             
 			[self addSubview:cell];
@@ -212,5 +220,33 @@
 		}
 	}
 }
+
+
+#pragma mark - Deletion Module -
+
+- (void)didDeleteCellWithPosition:(NSNotification*)notif
+{
+    
+    MWTableViewCell *deletedCell= (MWTableViewCell*)[notif object];
+   
+    [self.collectionViewDelegate didDeleteCellWithPosition:deletedCell.rowPosition];
+   
+
+    NSMutableArray* arrayToRemove=[@[]mutableCopy];
+   
+    for (MWTableViewCell* cell in self.visibleCells) {
+        
+        if (cell.rowPosition>=deletedCell.rowPosition) {
+            [cell removeFromSuperview];
+            [arrayToRemove addObject:cell];
+            
+        }
+        
+    }
+    [self.visibleCells removeObjectsInArray:arrayToRemove];
+    [self setNeedsLayout];
+
+}
+
 
 @end

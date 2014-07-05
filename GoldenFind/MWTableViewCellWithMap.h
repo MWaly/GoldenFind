@@ -1,5 +1,5 @@
 //
-//  MWCollectionViewCellWithMap.h
+//  MWTableViewCellWithMap.h
 //  GoldenFind
 //
 //  Created by Mohamed Mokhles Waly on 7/3/14.
@@ -7,14 +7,14 @@
 //
 
 @import MapKit;
-#import "MWCollectionViewCell.h"
+#import "MWTableViewCell.h"
 
-@interface MWCollectionViewCellWithMap : MWCollectionViewCell
+@interface MWTableViewCellWithMap : MWTableViewCell
 
 /**
  *  Property of Mapview holding the map to be displayed by the cell
  */
-@property (nonatomic, readwrite) MKMapView *map;
+@property (nonatomic) MKMapView *map;
 
 /**
  *  The designated initliazer

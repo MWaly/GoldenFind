@@ -9,8 +9,8 @@
 
 @import UIKit;
 @import QuartzCore;
-@class MWCollectionViewCellWithImage;
-@class MWCollectionViewCellWithMap;
+@class MWTableViewCellWithImage;
+@class MWTableViewCellWithMap;
 
 /**
  *  Image type property , Initiating a new cell should specify its type from here
@@ -28,7 +28,7 @@ typedef enum  {
 }ImageType;
 
 
-@interface MWCollectionViewCell : UIView <UIGestureRecognizerDelegate>
+@interface MWTableViewCell : UIView <UIGestureRecognizerDelegate>
 
 
 ///Title Label , which contains the main text to be displayed (E.g. Company name)
@@ -47,19 +47,20 @@ typedef enum  {
 @property (nonatomic, readonly, assign) NSInteger cellHeight;
 
 /// The row position acts as the same as Apple's impletation of IndexPath
-@property (nonatomic, readonly, assign) NSUInteger rowPosition;
+@property (nonatomic, assign) NSUInteger rowPosition;
 
 /// The dictionary of Attributes where keys and values will be passed to it to display them
 @property (nonatomic, readwrite) NSDictionary *attributes;
 
-
-@property (nonatomic, weak) id <UIGestureRecognizerDelegate> gestureRecgonizerDelegate;
-
+/**
+ *  Detection Whether the cell is selected or not
+ */
+@property (nonatomic, readonly, assign) BOOL isSelected;
 
 
 
 /**
- *  This is the initilization method for MWCollectionViewCell which returns a child cell according to the cell type provided
+ *  This is the initilization method for MWTableViewCell which returns a child cell according to the cell type provided
  *
  *  @param reuseIdentifier String which is needed to tag the cell for re-usage purposes
  *  @param cellType        the cell type passed which might be Empty , Map or Image

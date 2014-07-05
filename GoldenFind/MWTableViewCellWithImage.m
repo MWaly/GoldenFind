@@ -6,16 +6,16 @@
 //  Copyright (c) 2014 Mokhles. All rights reserved.
 //
 
-#import "MWCollectionViewCellWithImage.h"
+#import "MWTableViewCellWithImage.h"
 
-@interface MWCollectionViewCellWithImage ()
+@interface MWTableViewCellWithImage ()
 
 @property (nonatomic, readwrite, assign) ImageType cellType;
 @property (nonatomic, readwrite) UILabel *titleLabel;
 @property (nonatomic, readwrite) UILabel *detailLabel;
 @end
 
-@implementation MWCollectionViewCellWithImage
+@implementation MWTableViewCellWithImage
 
 @synthesize  cellType;
 @synthesize titleLabel = _titleLabel;
@@ -62,7 +62,7 @@
 		_detailLabel = [[UILabel alloc] initWithFrame:CGRectZero];
 		_detailLabel.numberOfLines = 0;
 		[_detailLabel setFont:[UIFont fontWithName:@"Arial" size:14]];
-		[_titleLabel setTextColor:[UIColor redColor]];
+
 		[self addSubview:_detailLabel];
 	}
     
@@ -79,6 +79,7 @@
 	}
 	if (_cellImage) {
 		self.cellImage.frame = CGRectMake(5, 10, (self.frame.size.width / 4), (self.frame.size.height / 2) - 10);
+        self.cellImage.tag=5;
 	}
 	self.layer.borderColor = [UIColor purpleColor].CGColor;
 	self.layer.borderWidth = 0.25;

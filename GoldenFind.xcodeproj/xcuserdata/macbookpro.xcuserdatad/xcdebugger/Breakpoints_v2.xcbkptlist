@@ -24,11 +24,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "GoldenFind/GFPlaceViewModel.h"
-            timestampString = "426067940.306132"
+            timestampString = "426286178.009966"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "13"
-            endingLineNumber = "13"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
             landmarkName = "@interface GFPlaceViewModel"
             landmarkType = "2">
          </BreakpointContent>
@@ -72,11 +72,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "GoldenFind/GFViewController.m"
-            timestampString = "426126434.790539"
+            timestampString = "426287484.391552"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
             landmarkName = "-viewDidLoad"
             landmarkType = "5">
          </BreakpointContent>
@@ -119,8 +119,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "34"
             endingLineNumber = "34"
-            landmarkName = "titleText"
-            landmarkType = "19">
+            landmarkName = "@implementation GFPlace"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -135,8 +135,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "51"
             endingLineNumber = "51"
-            landmarkName = "+loadPlacesOffline"
-            landmarkType = "5">
+            landmarkName = "@implementation GFInteractor"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -145,12 +145,12 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "GoldenFind/MWCollectionView.m"
-            timestampString = "426126615.990956"
+            filePath = "GoldenFind/MWTableView.m"
+            timestampString = "426287484.391552"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "82"
-            endingLineNumber = "82"
+            startingLineNumber = "102"
+            endingLineNumber = "102"
             landmarkName = "-reloadData"
             landmarkType = "5">
          </BreakpointContent>
@@ -161,12 +161,12 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "GoldenFind/MWCollectionView.m"
-            timestampString = "426126619.594694"
+            filePath = "GoldenFind/MWTableView.m"
+            timestampString = "426287484.391552"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
             landmarkName = "-reloadData"
             landmarkType = "5">
          </BreakpointContent>
@@ -177,12 +177,12 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "GoldenFind/MWCollectionView.m"
-            timestampString = "426126831.107542"
+            filePath = "GoldenFind/MWTableView.m"
+            timestampString = "426287793.244848"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
+            startingLineNumber = "109"
+            endingLineNumber = "109"
             landmarkName = "-enqueueReusableCell:withIdentifier:"
             landmarkType = "5">
          </BreakpointContent>
@@ -194,12 +194,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "GoldenFind/GFViewController.m"
-            timestampString = "426127011.633397"
+            timestampString = "426287484.391552"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
-            landmarkName = "-numberOfRows"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "-tableView:cellAtPosition:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -209,12 +209,12 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "GoldenFind/MWCollectionView.m"
-            timestampString = "426178853.867077"
+            filePath = "GoldenFind/MWTableView.m"
+            timestampString = "426296195.88781"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "134"
-            endingLineNumber = "134"
+            startingLineNumber = "161"
+            endingLineNumber = "161"
             landmarkName = "-layoutTableForYOffset:height:"
             landmarkType = "5">
          </BreakpointContent>
@@ -225,12 +225,12 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "GoldenFind/MWCollectionView.m"
-            timestampString = "426178853.867077"
+            filePath = "GoldenFind/MWTableView.m"
+            timestampString = "426296195.88781"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "140"
-            endingLineNumber = "140"
+            startingLineNumber = "167"
+            endingLineNumber = "167"
             landmarkName = "-layoutTableForYOffset:height:"
             landmarkType = "5">
          </BreakpointContent>
@@ -241,12 +241,12 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "GoldenFind/MWCollectionView.m"
-            timestampString = "426178853.867077"
+            filePath = "GoldenFind/MWTableView.m"
+            timestampString = "426296195.88781"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "143"
-            endingLineNumber = "143"
+            startingLineNumber = "170"
+            endingLineNumber = "170"
             landmarkName = "-layoutTableForYOffset:height:"
             landmarkType = "5">
          </BreakpointContent>
@@ -257,12 +257,12 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "GoldenFind/MWCollectionView.m"
-            timestampString = "426127304.115375"
+            filePath = "GoldenFind/MWTableView.m"
+            timestampString = "426287793.244848"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "99"
-            endingLineNumber = "99"
+            startingLineNumber = "125"
+            endingLineNumber = "125"
             landmarkName = "-captureTableStructure"
             landmarkType = "5">
          </BreakpointContent>
@@ -273,12 +273,12 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "GoldenFind/MWCollectionView.m"
-            timestampString = "426178853.867077"
+            filePath = "GoldenFind/MWTableView.m"
+            timestampString = "426296373.825134"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "149"
-            endingLineNumber = "149"
+            startingLineNumber = "184"
+            endingLineNumber = "184"
             landmarkName = "-layoutTableForYOffset:height:"
             landmarkType = "5">
          </BreakpointContent>
@@ -289,12 +289,12 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "GoldenFind/MWCollectionView.m"
-            timestampString = "426178853.867077"
+            filePath = "GoldenFind/MWTableView.m"
+            timestampString = "426296373.825134"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "155"
-            endingLineNumber = "155"
+            startingLineNumber = "190"
+            endingLineNumber = "190"
             landmarkName = "-layoutTableForYOffset:height:"
             landmarkType = "5">
          </BreakpointContent>
@@ -305,12 +305,12 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "GoldenFind/MWCollectionView.m"
-            timestampString = "426178853.867077"
+            filePath = "GoldenFind/MWTableView.m"
+            timestampString = "426296373.825134"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "150"
-            endingLineNumber = "150"
+            startingLineNumber = "185"
+            endingLineNumber = "185"
             landmarkName = "-layoutTableForYOffset:height:"
             landmarkType = "5">
          </BreakpointContent>
@@ -321,12 +321,12 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "GoldenFind/MWCollectionView.m"
-            timestampString = "426178853.867077"
+            filePath = "GoldenFind/MWTableView.m"
+            timestampString = "426296373.825134"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "148"
-            endingLineNumber = "148"
+            startingLineNumber = "183"
+            endingLineNumber = "183"
             landmarkName = "-layoutTableForYOffset:height:"
             landmarkType = "5">
          </BreakpointContent>
@@ -337,12 +337,12 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "GoldenFind/MWCollectionView.m"
-            timestampString = "426178853.867077"
+            filePath = "GoldenFind/MWTableView.m"
+            timestampString = "426287793.244848"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "119"
-            endingLineNumber = "119"
+            startingLineNumber = "145"
+            endingLineNumber = "145"
             landmarkName = "-captureTableStructure"
             landmarkType = "5">
          </BreakpointContent>
@@ -353,12 +353,12 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "GoldenFind/MWCollectionView.m"
-            timestampString = "426178853.867077"
+            filePath = "GoldenFind/MWTableView.m"
+            timestampString = "426296195.88781"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "133"
-            endingLineNumber = "133"
+            startingLineNumber = "160"
+            endingLineNumber = "160"
             landmarkName = "-layoutTableForYOffset:height:"
             landmarkType = "5">
          </BreakpointContent>
@@ -369,12 +369,12 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "GoldenFind/MWCollectionView.m"
-            timestampString = "426178853.867077"
+            filePath = "GoldenFind/MWTableView.m"
+            timestampString = "426296373.825134"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "174"
-            endingLineNumber = "174"
+            startingLineNumber = "209"
+            endingLineNumber = "209"
             landmarkName = "-layoutTableForYOffset:height:"
             landmarkType = "5">
          </BreakpointContent>
@@ -385,7 +385,7 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "GoldenFind/MWCollectionViewCellWithMap.m"
+            filePath = "GoldenFind/MWTableViewCellWithMap.m"
             timestampString = "426157950.850989"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
@@ -401,44 +401,12 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "GoldenFind/MWCollectionView.m"
-            timestampString = "426178853.867077"
+            filePath = "GoldenFind/MWTableView.m"
+            timestampString = "426296373.825134"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "145"
-            endingLineNumber = "145"
-            landmarkName = "-layoutTableForYOffset:height:"
-            landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[MWCollectionView layoutTableForYOffset:height:]"
-                  moduleName = "GoldenFind"
-                  urlString = "file:///Users/macbookpro/Desktop/Apps/GoldenFind/GoldenFind/MWCollectionView.m"
-                  timestampString = "426161828.698469"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "149"
-                  endingLineNumber = "149"
-                  offsetFromSymbolStart = "207">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__49-[MWCollectionView layoutTableForYOffset:height:]_block_invoke"
-                  moduleName = "GoldenFind"
-                  urlString = "file:///Users/macbookpro/Desktop/Apps/GoldenFind/GoldenFind/MWCollectionView.m"
-                  timestampString = "426161828.698725"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "149"
-                  endingLineNumber = "149"
-                  offsetFromSymbolStart = "79">
-               </Location>
-            </Locations>
+            startingLineNumber = "269"
+            endingLineNumber = "269">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -447,26 +415,12 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "GoldenFind/MWCollectionView.m"
-            timestampString = "426180017.658982"
+            filePath = "GoldenFind/MWTableView.m"
+            timestampString = "426296373.825134"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "206"
-            endingLineNumber = "206">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "GoldenFind/MWCollectionView.m"
-            timestampString = "426178853.867077"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "160"
-            endingLineNumber = "160"
+            startingLineNumber = "195"
+            endingLineNumber = "195"
             landmarkName = "-layoutTableForYOffset:height:"
             landmarkType = "5">
          </BreakpointContent>
@@ -477,12 +431,12 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "GoldenFind/MWCollectionView.m"
-            timestampString = "426180371.184754"
+            filePath = "GoldenFind/MWTableView.m"
+            timestampString = "426287484.391552"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
             landmarkName = "-dequeueReusableCellWithIdentifier:"
             landmarkType = "5">
          </BreakpointContent>
@@ -493,12 +447,12 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "GoldenFind/MWCollectionView.m"
-            timestampString = "426180375.29026"
+            filePath = "GoldenFind/MWTableView.m"
+            timestampString = "426287484.391552"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
             landmarkName = "-dequeueReusableCellWithIdentifier:"
             landmarkType = "5">
          </BreakpointContent>
@@ -509,12 +463,12 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "GoldenFind/MWCollectionView.m"
-            timestampString = "426180445.794772"
+            filePath = "GoldenFind/MWTableView.m"
+            timestampString = "426287484.391552"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "69"
-            endingLineNumber = "69"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
             landmarkName = "-dequeueReusableCellWithIdentifier:"
             landmarkType = "5">
          </BreakpointContent>
@@ -525,12 +479,12 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "GoldenFind/MWCollectionView.m"
-            timestampString = "426180448.234441"
+            filePath = "GoldenFind/MWTableView.m"
+            timestampString = "426287484.391552"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
             landmarkName = "-dequeueReusableCellWithIdentifier:"
             landmarkType = "5">
          </BreakpointContent>
@@ -541,13 +495,139 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "GoldenFind/MWCollectionView.m"
-            timestampString = "426180481.518176"
+            filePath = "GoldenFind/MWTableView.m"
+            timestampString = "426287793.244848"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "98"
-            endingLineNumber = "98"
+            startingLineNumber = "124"
+            endingLineNumber = "124"
             landmarkName = "-captureTableStructure"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GoldenFind/MWTableViewDelegate.h"
+            timestampString = "426268267.519922"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GoldenFind/MWTableView.m"
+            timestampString = "426287793.244848"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "144"
+            endingLineNumber = "144"
+            landmarkName = "-captureTableStructure"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GoldenFind/GFViewController.m"
+            timestampString = "426289100.657596"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
+            landmarkName = "-didDeleteCellWithPosition:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GoldenFind/MWTableView.m"
+            timestampString = "426296373.825134"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "257"
+            endingLineNumber = "257"
+            landmarkName = "-didDeleteCellWithPosition:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GoldenFind/GFViewController.m"
+            timestampString = "426287883.469796"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "-numberOfRows"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GoldenFind/GFViewController.m"
+            timestampString = "426287988.202973"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "-numberOfRows"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GoldenFind/MWTableView.m"
+            timestampString = "426296195.88781"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "153"
+            endingLineNumber = "153"
+            landmarkName = "-layoutTableForYOffset:height:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GoldenFind/GFViewController.m"
+            timestampString = "426294724.900987"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "-tableView:cellAtPosition:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

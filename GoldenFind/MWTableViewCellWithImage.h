@@ -6,13 +6,13 @@
 //  Copyright (c) 2014 Mokhles. All rights reserved.
 
 /**
- *  This a subclass for MWCollectionViewCell which is designed for cell requiring image reprentation
+ *  This a subclass for MWTableViewCell which is designed for cell requiring image reprentation
  *
  */
 
-#import "MWCollectionViewCell.h"
+#import "MWTableViewCell.h"
 
-@interface MWCollectionViewCellWithImage : MWCollectionViewCell
+@interface MWTableViewCellWithImage : MWTableViewCell
 
 /**
  *  Property of image view holding the image displayed by the cell

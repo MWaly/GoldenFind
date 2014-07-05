@@ -7,15 +7,16 @@
 //
 
 #import "GFViewController.h"
-#import "MWCollectionView.h"
+#import "MWTableView.h"
 #import "GFInteractor.h"
 #import "GFPlaceViewModel.h"
 #import "GFPlace.h"
-#import "MWCollectionViewCell.h"
+#import "MWTableViewCell.h"
 
 
 @interface GFViewController ()
-@property (nonatomic, strong) NSArray *arrayOfPlaces;
+@property (nonatomic, strong) NSMutableArray *arrayOfPlaces;
+@property (nonatomic, strong) MWTableView *tableView;
 @end
 
 @implementation GFViewController
@@ -26,13 +27,13 @@
     
 	// Get the data and parse it first
 	self.arrayOfPlaces = [GFInteractor loadPlacesOffline][0];
-	MWCollectionView *collectionView = [[MWCollectionView alloc]initWithFrame:CGRectMake(0, 20, self.view.frame.size.width, self.view.frame.size.height - 20)];
-	collectionView.collectionViewDelegate = self;
-	collectionView.dataSource = self;
+	self.tableView = [[MWTableView alloc]initWithFrame:CGRectMake(0, 20, self.view.frame.size.width, self.view.frame.size.height - 20)];
+	self.tableView.collectionViewDelegate = self;
+	self.tableView.dataSource = self;
     
     
     
-	[self.view addSubview:collectionView];
+	[self.view addSubview:self.tableView];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -46,7 +47,7 @@
 	return [self.arrayOfPlaces count];
 }
 
-- (MWCollectionViewCell *)tableView:(MWCollectionView *)tableView cellAtPosition:(NSInteger)rowPosition {
+- (MWTableViewCell *)tableView:(MWTableView *)tableView cellAtPosition:(NSInteger)rowPosition {
 	static NSString *reuseIdentifier = @"MAPCELL";
 	static NSString *reuseIdentifier2 = @"IMAGECELL";
     
@@ -54,25 +55,27 @@
     
 	// Handling Map Type Cell
 	if (currentPlace.type == MAP) {
-		MWCollectionViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseIdentifier];
+		MWTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseIdentifier];
 		if (cell == nil) {
-			cell = [[MWCollectionViewCell alloc]initWithReuseIdentifier:reuseIdentifier cellType:MAPCELL];
+			cell = [[MWTableViewCell alloc]initWithReuseIdentifier:reuseIdentifier cellType:MAPCELL];
 			NSLog(@"New one map");
 		}
 		[cell setAttributes:@{ @"titleLabel":currentPlace.titleText, @"detail":currentPlace.detailText, @"lon":[currentPlace valueForKey:@"lon"], @"lat":[currentPlace valueForKey:@"lat"] }
-         ];
         
+         ];
+        cell.rowPosition=rowPosition;
 		return cell;
 	}
     
 	else {
-		MWCollectionViewCell *imageCell = [tableView dequeueReusableCellWithIdentifier:reuseIdentifier2];
+		MWTableViewCell *imageCell = [tableView dequeueReusableCellWithIdentifier:reuseIdentifier2];
 		if (imageCell == nil) {
-			imageCell = [[MWCollectionViewCell alloc]initWithReuseIdentifier:reuseIdentifier2 cellType:IMAGECELL];
+			imageCell = [[MWTableViewCell alloc]initWithReuseIdentifier:reuseIdentifier2 cellType:IMAGECELL];
 			NSLog(@"New one image");
 		}
-		[imageCell setAttributes:@{ @"titleLabel":currentPlace.titleText, @"detail":currentPlace.detailText, @"image":[currentPlace valueForKey:@"placeImage"] }
+		[imageCell setAttributes:@{ @"titleLabel":[NSString stringWithFormat:@"%@ %li", currentPlace.titleText,(long)imageCell.cellHeight ], @"detail":currentPlace.detailText, @"image":[currentPlace valueForKey:@"placeImage"] }
          ];
+        imageCell.rowPosition=rowPosition;
 		return imageCell;
 	}
 }
@@ -80,6 +83,14 @@
 - (NSInteger)heightForRowAtPosition:(NSInteger)rowPosition {
 	GFPlace *place = self.arrayOfPlaces[rowPosition];
 	return [GFPlaceViewModel getHeightForNumberOfWords:[place.detailText length]];
+}
+
+#pragma mark - Deleting Module - 
+- (void)didDeleteCellWithPosition:(NSInteger)rowPosition
+{
+    [self.arrayOfPlaces removeObjectAtIndex:rowPosition];
+    [self.tableView reloadData];
+    
 }
 
 @end

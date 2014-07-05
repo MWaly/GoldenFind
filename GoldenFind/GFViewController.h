@@ -6,9 +6,15 @@
 //  Copyright (c) 2014 Mokhles. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-#import "MWCollectionViewDataSource.h"
-#import "MWCollectionViewDelegate.h"
-@interface GFViewController : UIViewController <MWCollectionViewDataSource, MWCollectionViewDelegate>
+/**
+ *  This class is the view controller holding the the MWTableView Instance for Demo purpose 
+ */
+
+@import UIKit;
+#import "MWTableViewDataSource.h"
+#import "MWTableViewDelegate.h"
+
+
+@interface GFViewController : UIViewController <MWTableViewDataSource, MWTableViewDelegate>
 
 @end

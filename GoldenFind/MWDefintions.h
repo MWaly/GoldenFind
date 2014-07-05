@@ -6,12 +6,20 @@
 //  Copyright (c) 2014 Mokhles. All rights reserved.
 
 /**
- *  This will hold the keys and common defintions to be used by the MWCollectionView
+ *  This will hold the keys and common defintions to be used by the MWTableView
  */
 
-#ifndef GoldenFind_MWDefintions_h
-#define GoldenFind_MWDefintions_h
+/**
+ *  The common imports
+ */
+#import "MWNotifications.h"
 
 
+/**
+ *   Deletion Module Constants
+ */
+#define DELETEANIMATIONDURATION 0.2
+#define DELETEBUTTONTAG 1
+#define DELETEBUTTONWIDTH 80
 
-#endif
+

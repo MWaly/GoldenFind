@@ -13,11 +13,20 @@
 
 // Supporting Variable Cell Height
 + (NSInteger)getHeightForNumberOfWords:(NSInteger)wordsCount {
-	if (wordsCount < 80) {
-		return 60;
-	}
-	else
-		return 120;
+	return wordsCount;
 }
 
+
++ (UIButton*)getDeleteButton
+{
+
+	UIButton *deleteButton = [UIButton buttonWithType:UIButtonTypeCustom];
+	deleteButton.backgroundColor = [UIColor redColor];
+	[deleteButton setTitle:@"Delete" forState:UIControlStateNormal];
+	[deleteButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    deleteButton.tag=1;
+    
+    return deleteButton;
+
+}
 @end
