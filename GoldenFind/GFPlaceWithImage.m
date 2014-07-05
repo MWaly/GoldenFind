@@ -11,10 +11,10 @@
 
 @interface GFPlaceWithImage ()
 // Private setter
-@property (nonatomic,readwrite)UIImage *placeImage;
-@property (nonatomic , readwrite) NSString* titleText;
-@property (nonatomic , readwrite) NSString* detailText;
-@property (nonatomic , readwrite ) PlaceType type;
+@property (nonatomic, readwrite) UIImage *placeImage;
+@property (nonatomic, readwrite) NSString *titleText;
+@property (nonatomic, readwrite) NSString *detailText;
+@property (nonatomic, readwrite) PlaceType type;
 
 @end
 
@@ -24,23 +24,20 @@
 @dynamic detailText;
 @dynamic type;
 
-+ (instancetype)createPlaceWithDictionary:(NSDictionary*)dict
-{
-    return [[GFPlaceWithImage alloc] initWithDictionary:dict];
++ (instancetype)createPlaceWithDictionary:(NSDictionary *)dict {
+	return [[GFPlaceWithImage alloc] initWithDictionary:dict];
 }
 
-- (instancetype)initWithDictionary:(NSDictionary *)dict
-{
-    self = [super init];
-    if (self) {
-        
-        self.titleText=dict[@"company"];
-        self.detailText=dict[@"detail"];
-        NSString *imageFilePath=[[NSBundle mainBundle] pathForResource:dict[@"image"] ofType:@"png"];
-        self.placeImage=[UIImage imageWithContentsOfFile:imageFilePath];
-        self.type=IMAGE;
-
-    }
-    return self;
+- (instancetype)initWithDictionary:(NSDictionary *)dict {
+	self = [super init];
+	if (self) {
+		self.titleText = dict[@"company"];
+		self.detailText = dict[@"detail"];
+		NSString *imageFilePath = [[NSBundle mainBundle] pathForResource:dict[@"image"] ofType:@"png"];
+		self.placeImage = [UIImage imageWithContentsOfFile:imageFilePath];
+		self.type = IMAGE;
+	}
+	return self;
 }
+
 @end

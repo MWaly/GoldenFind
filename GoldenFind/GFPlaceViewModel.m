@@ -12,13 +12,12 @@
 
 
 // Supporting Variable Cell Height
-+ (NSInteger)getHeightForNumberOfWords:(NSInteger)wordsCount
-{
-    if (wordsCount<80)
-    {
-        return 60;
-    }
-    else
-    return 120;
++ (NSInteger)getHeightForNumberOfWords:(NSInteger)wordsCount {
+	if (wordsCount < 80) {
+		return 60;
+	}
+	else
+		return 120;
 }
+
 @end

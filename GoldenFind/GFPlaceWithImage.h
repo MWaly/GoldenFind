@@ -10,7 +10,7 @@
 
 @interface GFPlaceWithImage : GFPlace
 
-+ (instancetype)createPlaceWithDictionary:(NSDictionary*)dict;
-@property (nonatomic,readonly)UIImage* placeImage;
++ (instancetype)createPlaceWithDictionary:(NSDictionary *)dict;
+@property (nonatomic, readonly) UIImage *placeImage;
 
 @end

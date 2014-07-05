@@ -7,8 +7,8 @@
 
 
 /*
-This class acts as the business engine for the application by parsing the JSON data and converting them to usable app data
-*/
+ This class acts as the business engine for the application by parsing the JSON data and converting them to usable app data
+ */
 
 @import Foundation;
 @class GFPlace;
@@ -16,8 +16,8 @@ This class acts as the business engine for the application by parsing the JSON d
 
 @interface GFInteractor : NSObject
 
-// returns an array full of places from file 
-+ (NSArray*)loadPlacesOffline;
+// returns an array full of places from file
++ (NSArray *)loadPlacesOffline;
 
 
 

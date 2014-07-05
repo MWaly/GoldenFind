@@ -96,6 +96,7 @@
 		528DF828196584AA00B9D6F2 /* MWCollectionViewCellWithMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWCollectionViewCellWithMap.h; sourceTree = "<group>"; };
 		528DF829196584AA00B9D6F2 /* MWCollectionViewCellWithMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWCollectionViewCellWithMap.m; sourceTree = "<group>"; };
 		528DF82E19658CBB00B9D6F2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		52A937511967FB5100B974CB /* MWDefintions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWDefintions.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -282,6 +283,7 @@
 			children = (
 				5281240119649DF800B02456 /* MWCollectionView.h */,
 				5281240219649DF800B02456 /* MWCollectionView.m */,
+				52A937511967FB5100B974CB /* MWDefintions.h */,
 			);
 			name = Table;
 			sourceTree = "<group>";

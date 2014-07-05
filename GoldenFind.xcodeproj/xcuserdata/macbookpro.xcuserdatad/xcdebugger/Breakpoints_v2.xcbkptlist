@@ -119,8 +119,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "34"
             endingLineNumber = "34"
-            landmarkName = "-initWithDictionary:"
-            landmarkType = "5">
+            landmarkName = "titleText"
+            landmarkType = "19">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -151,7 +151,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "82"
             endingLineNumber = "82"
-            landmarkName = "-layoutSubviews"
+            landmarkName = "-reloadData"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -167,7 +167,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "80"
             endingLineNumber = "80"
-            landmarkName = "-layoutSubviews"
+            landmarkName = "-reloadData"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -183,7 +183,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "88"
             endingLineNumber = "88"
-            landmarkName = "-reloadData"
+            landmarkName = "-enqueueReusableCell:withIdentifier:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -215,7 +215,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "134"
             endingLineNumber = "134"
-            landmarkName = "-captureTableStructure"
+            landmarkName = "-layoutTableForYOffset:height:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -263,7 +263,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "99"
             endingLineNumber = "99"
-            landmarkName = "-enqueueReusableCell:withIdentifier:"
+            landmarkName = "-captureTableStructure"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -359,7 +359,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "133"
             endingLineNumber = "133"
-            landmarkName = "-captureTableStructure"
+            landmarkName = "-layoutTableForYOffset:height:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -452,9 +452,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "206"
-            endingLineNumber = "206"
-            landmarkName = "-layoutTableForYOffset:height:"
-            landmarkType = "5">
+            endingLineNumber = "206">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -549,7 +547,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "98"
             endingLineNumber = "98"
-            landmarkName = "-enqueueReusableCell:withIdentifier:"
+            landmarkName = "-captureTableStructure"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

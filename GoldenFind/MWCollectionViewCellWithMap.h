@@ -11,7 +11,18 @@
 
 @interface MWCollectionViewCellWithMap : MWCollectionViewCell
 
+/**
+ *  Property of Mapview holding the map to be displayed by the cell
+ */
+@property (nonatomic, readwrite) MKMapView *map;
 
-@property(nonatomic,readwrite) MKMapView *map;
-- (instancetype)initWithReuseIdentifier:(NSString *)reuseIdentifier ;
+/**
+ *  The designated initliazer
+ *
+ *  @param reuseIdentifier String which is needed to tag the cell for re-usage purposes
+ *
+ *  @return object instance of MWCollecitonViewCell
+ *
+ */
+- (instancetype)initWithReuseIdentifier:(NSString *)reuseIdentifier;
 @end

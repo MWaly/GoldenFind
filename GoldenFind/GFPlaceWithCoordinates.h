@@ -11,10 +11,10 @@
 
 @interface GFPlaceWithCoordinates : GFPlace
 
-@property (nonatomic,readonly)NSNumber *lon;
-@property (nonatomic,readonly)NSNumber *lat;
+@property (nonatomic, readonly) NSNumber *lon;
+@property (nonatomic, readonly) NSNumber *lat;
 
-+ (instancetype)createPlaceWithDictionary:(NSDictionary*)dict;
++ (instancetype)createPlaceWithDictionary:(NSDictionary *)dict;
 
 
 

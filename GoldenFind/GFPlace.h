@@ -7,7 +7,7 @@
 
 
 /*
- This is the parent class for places objects  and holds the common properties and debugging 
+ This is the parent class for places objects  and holds the common properties and debugging
  This is the data model which holds data parsed from the JSON feed and then passed to be processed by a view object
  */
 @import Foundation;
@@ -23,10 +23,10 @@ typedef enum  {
 
 @interface GFPlace : NSObject
 
-@property (nonatomic , readonly) NSString* titleText;
-@property (nonatomic , readonly) NSString* detailText;
-@property (nonatomic , readonly ) PlaceType type;
+@property (nonatomic, readonly) NSString *titleText;
+@property (nonatomic, readonly) NSString *detailText;
+@property (nonatomic, readonly) PlaceType type;
 
-- (instancetype)initWithDictionary:(NSDictionary*)dict;
+- (instancetype)initWithDictionary:(NSDictionary *)dict;
 
 @end
