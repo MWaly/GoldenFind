@@ -27,7 +27,7 @@
     
 	// Get the data and parse it first
 	self.arrayOfPlaces = [GFInteractor loadPlacesOffline][0];
-	self.tableView = [[MWTableView alloc]initWithFrame:CGRectMake(0, 20, self.view.frame.size.width, self.view.frame.size.height - 20)];
+	self.tableView = [[MWTableView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
 	self.tableView.collectionViewDelegate = self;
 	self.tableView.dataSource = self;
     

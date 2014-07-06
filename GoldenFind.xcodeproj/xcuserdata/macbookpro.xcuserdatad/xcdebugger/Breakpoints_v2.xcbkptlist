@@ -643,8 +643,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "77"
             endingLineNumber = "77"
-            landmarkName = "-initWithFrame:"
-            landmarkType = "5">
+            landmarkName = "@implementation MWTableViewCell"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -691,7 +691,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "212"
             endingLineNumber = "212"
-            landmarkName = "-initWithFrame:"
+            landmarkName = "-startAnimatingFullScreen:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
