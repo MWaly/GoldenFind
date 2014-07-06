@@ -33,8 +33,7 @@
 	if (self) {
 		self.titleText = dict[@"company"];
 		self.detailText = dict[@"detail"];
-		NSString *imageFilePath = [[NSBundle mainBundle] pathForResource:dict[@"image"] ofType:@"png"];
-		self.placeImage = [UIImage imageWithContentsOfFile:imageFilePath];
+		self.placeImage = [UIImage imageNamed:[NSString stringWithFormat:@"%@.png", dict[@"image"]]];
 		self.type = IMAGE;
 	}
 	return self;

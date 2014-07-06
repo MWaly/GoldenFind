@@ -7,7 +7,7 @@
 //
 
 /**
- *  This class is the view controller holding the the MWTableView Instance for Demo purpose 
+ *  This class is the view controller holding the the MWTableView Instance for Demo purpose
  */
 
 @import UIKit;

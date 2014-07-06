@@ -6,7 +6,10 @@
 //  Copyright (c) 2014 Mokhles. All rights reserved.
 //
 
-
+/**
+ *  The class responsible for drawing the table view components , it is worth to say that re-usage pattern is followed by the tutorial published from Mike-Ash
+ *
+ */
 
 #import "MWTableView.h"
 #import "MWTableViewCell.h"
@@ -32,15 +35,17 @@
 //Array Holding Different Row Heights
 @property (nonatomic)  NSMutableArray *rowHeights;
 
+
+@property (nonatomic, assign) BOOL isFullScreenOn;
 /**
- *  MEthod to calculate the heights for rows , normally needed for the scroll view to calculate its content size
+ *  Method to calculate the heights for rows , normally needed for the scroll view to calculate its content size
  *
  *  @return array of row heights
  */
 - (NSArray *)captureTableStructure;
 
 /**
- *  Method laying out the table after scrolling 
+ *  Method laying out the table after scrolling
  *
  *  @param yOffset starting offset
  *  @param height  height covered to display the table view
@@ -64,7 +69,12 @@
 		self.visibleCells  = [@[] mutableCopy];
 		self.reusePool    = [NSMutableSet set];
 		self.rowHeights = [@[] mutableCopy];
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didDeleteCellWithPosition:) name:MWDidDeleteACell object:nil];
+        
+        
+        
+		[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didDeleteCellWithPosition:) name:MWDidDeleteACell object:nil];
+		[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didSelectCellWithPosition:) name:MWDidSelectACell object:nil];
+		[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didDismiss:) name:MWDidCancelCellSelection object:nil];
 	}
 	return self;
 }
@@ -101,19 +111,18 @@
 	self.tableData = [self captureTableStructure];
     
 	self.contentSize = CGSizeMake(self.bounds.size.width, self.totalHeight);
-    
 }
 
 #pragma mark - Private Methods -
 
 - (void)enqueueReusableCell:(MWTableViewCell *)cell withIdentifier:(NSString *)reuseIdentifier {
 	cell.reuseIdentifier = reuseIdentifier;
-  /*
-    if ([cell isKindOfClass:[MWTableViewCellWithImage class]]) {
-        cell.im
-    }
-   */
-   	[self.reusePool addObject:cell];
+	/*
+     if ([cell isKindOfClass:[MWTableViewCellWithImage class]]) {
+     cell.im
+     }
+	 */
+	[self.reusePool addObject:cell];
 }
 
 - (NSArray *)captureTableStructure {
@@ -144,7 +153,7 @@
 	return self.rowHeights;
 }
 
-#pragma mark Layout Methods -
+#pragma mark - Layout Methods -
 
 
 - (void)layoutTableForYOffset:(CGFloat)yOffset height:(CGFloat)height {
@@ -170,7 +179,7 @@
 	[self.visibleCells removeObjectsInArray:newVisibleCells];
     
 	[self.visibleCells enumerateObjectsUsingBlock: ^(MWTableViewCell *cell, NSUInteger idx, BOOL *stop) {
-     	    [self enqueueReusableCell:cell withIdentifier:cell.reuseIdentifier];
+	    [self enqueueReusableCell:cell withIdentifier:cell.reuseIdentifier];
 	    [cell removeFromSuperview];
 	}
      
@@ -221,32 +230,67 @@
 	}
 }
 
-
 #pragma mark - Deletion Module -
 
-- (void)didDeleteCellWithPosition:(NSNotification*)notif
-{
+- (void)didDeleteCellWithPosition:(NSNotification *)notif {
+	MWTableViewCell *deletedCell = (MWTableViewCell *)[notif object];
     
-    MWTableViewCell *deletedCell= (MWTableViewCell*)[notif object];
-   
-    [self.collectionViewDelegate didDeleteCellWithPosition:deletedCell.rowPosition];
-   
-
-    NSMutableArray* arrayToRemove=[@[]mutableCopy];
-   
-    for (MWTableViewCell* cell in self.visibleCells) {
-        
-        if (cell.rowPosition>=deletedCell.rowPosition) {
-            [cell removeFromSuperview];
-            [arrayToRemove addObject:cell];
-            
-        }
-        
-    }
-    [self.visibleCells removeObjectsInArray:arrayToRemove];
-    [self setNeedsLayout];
-
+	[self.collectionViewDelegate didDeleteCellWithPosition:deletedCell.rowPosition];
+    
+    
+	NSMutableArray *arrayToRemove = [@[] mutableCopy];
+    
+	for (MWTableViewCell *cell in self.visibleCells) {
+		if (cell.rowPosition >= deletedCell.rowPosition) {
+			[cell removeFromSuperview];
+			[arrayToRemove addObject:cell];
+		}
+	}
+	[self.visibleCells removeObjectsInArray:arrayToRemove];
+	[self setNeedsLayout];
 }
 
+#pragma mark - Selection Module -
+
+- (void)didSelectCellWithPosition:(NSNotification *)notif {
+	MWTableViewCell *selectedCell = (MWTableViewCell *)[notif object];
+	MWTableViewCell *mockingView = [selectedCell copy];
+	mockingView.frame = selectedCell.frame;
+	mockingView.bounds = selectedCell.bounds;
+	[mockingView setClipsToBounds:YES];
+    
+	[UIView animateWithDuration:0.25 animations: ^() {
+	    [self addSubview:mockingView];
+	}
+     
+                     completion: ^(BOOL finished) {
+                         [self bringSubviewToFront:mockingView];
+                         [self setScrollEnabled:NO];
+                         [mockingView startAnimatingFullScreen:mockingView];
+                         self.isFullScreenOn = YES;
+                     }
+     
+     ];
+}
+
+- (void)didDismiss:(NSNotification *)notif {
+	MWTableViewCell *viewToRemove = (MWTableViewCell *)[self viewWithTag:CELL_TAG];
+    
+    
+	[UIView animateWithDuration:FULLSCREEN_ANIMATION_DURATION
+	                      delay:0
+	                    options:UIViewAnimationOptionAllowAnimatedContent
+	                 animations: ^{
+                         viewToRemove.frame = CGRectMake(-viewToRemove.frame.size.width, viewToRemove.frame.origin.y, viewToRemove.frame.size.width, viewToRemove.frame.size.height);
+                     }
+     
+                     completion: ^(BOOL stop) {
+                         self.isFullScreenOn = NO;
+                         [self setScrollEnabled:YES];
+                         [viewToRemove removeFromSuperview];
+                     }
+     
+     ];
+}
 
 @end

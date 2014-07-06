@@ -16,17 +16,14 @@
 	return wordsCount;
 }
 
-
-+ (UIButton*)getDeleteButton
-{
-
++ (UIButton *)getDeleteButton {
 	UIButton *deleteButton = [UIButton buttonWithType:UIButtonTypeCustom];
 	deleteButton.backgroundColor = [UIColor redColor];
 	[deleteButton setTitle:@"Delete" forState:UIControlStateNormal];
 	[deleteButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    deleteButton.tag=1;
+	deleteButton.tag = 1;
     
-    return deleteButton;
-
+	return deleteButton;
 }
+
 @end

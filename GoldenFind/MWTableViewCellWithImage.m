@@ -13,6 +13,7 @@
 @property (nonatomic, readwrite, assign) ImageType cellType;
 @property (nonatomic, readwrite) UILabel *titleLabel;
 @property (nonatomic, readwrite) UILabel *detailLabel;
+@property (nonatomic, readwrite) NSDictionary *attributes;
 @end
 
 @implementation MWTableViewCellWithImage
@@ -21,7 +22,7 @@
 @synthesize titleLabel = _titleLabel;
 @synthesize detailLabel = _detailLabel;
 
-
+@synthesize attributes = _attributes;
 - (instancetype)initWithReuseIdentifier:(NSString *)reuseIdentifier {
 	if (self = [super initWithFrame:CGRectZero]) {
 		self.reuseIdentifier = reuseIdentifier;
@@ -32,10 +33,13 @@
 
 - (void)setAttributes:(NSDictionary *)attributes {
 	self.titleLabel.text = attributes[@"titleLabel"];
+	self.titleLabel.tag = CELL_TITLE_LABEL_TAG;
 	self.detailLabel.text = attributes[@"detail"];
+	self.detailLabel.tag = CELL_DETAIL_LABEL_TAG;
 	self.cellImage.image = attributes[@"image"];
+	self.cellImage.tag = MAIN_CELL_VIEW_TAG;
+	_attributes = attributes;
 	[self setNeedsLayout];
-
 }
 
 - (UIImageView *)cellImage {
@@ -62,7 +66,7 @@
 		_detailLabel = [[UILabel alloc] initWithFrame:CGRectZero];
 		_detailLabel.numberOfLines = 0;
 		[_detailLabel setFont:[UIFont fontWithName:@"Arial" size:14]];
-
+        
 		[self addSubview:_detailLabel];
 	}
     
@@ -70,6 +74,9 @@
 }
 
 - (void)layoutSubviews {
+	if (self.isSelected) {
+		return;
+	}
 	if (_titleLabel) {
 		self.titleLabel.frame = CGRectMake((self.frame.size.width / 4) + 5, 5, self.frame.size.width - (self.frame.size.width / 4) - 10, (self.frame.size.height / 2) - 5);
 	}
@@ -79,7 +86,6 @@
 	}
 	if (_cellImage) {
 		self.cellImage.frame = CGRectMake(5, 10, (self.frame.size.width / 4), (self.frame.size.height / 2) - 10);
-        self.cellImage.tag=5;
 	}
 	self.layer.borderColor = [UIColor purpleColor].CGColor;
 	self.layer.borderWidth = 0.25;

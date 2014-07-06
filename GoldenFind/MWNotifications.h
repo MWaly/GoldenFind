@@ -15,11 +15,11 @@
 
 #pragma mark - Delete Notfications
 extern NSString * const MWDidDisplayDeleteButton;
-extern NSString * const MWDidCancelDeleteButton;
-extern NSString * const MWDidDeleteACell;
+extern NSString *const MWDidCancelDeleteButton;
+extern NSString *const MWDidDeleteACell;
 
 #pragma mark - Selection Notfications
-extern NSString * const MWDidSelectACell;
-extern NSString * const MWDidCancelCellSelection;
+extern NSString *const MWDidSelectACell;
+extern NSString *const MWDidCancelCellSelection;
 
 @end

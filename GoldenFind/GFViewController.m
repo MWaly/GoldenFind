@@ -61,9 +61,9 @@
 			NSLog(@"New one map");
 		}
 		[cell setAttributes:@{ @"titleLabel":currentPlace.titleText, @"detail":currentPlace.detailText, @"lon":[currentPlace valueForKey:@"lon"], @"lat":[currentPlace valueForKey:@"lat"] }
-        
+         
          ];
-        cell.rowPosition=rowPosition;
+		cell.rowPosition = rowPosition;
 		return cell;
 	}
     
@@ -73,9 +73,9 @@
 			imageCell = [[MWTableViewCell alloc]initWithReuseIdentifier:reuseIdentifier2 cellType:IMAGECELL];
 			NSLog(@"New one image");
 		}
-		[imageCell setAttributes:@{ @"titleLabel":[NSString stringWithFormat:@"%@ %li", currentPlace.titleText,(long)imageCell.cellHeight ], @"detail":currentPlace.detailText, @"image":[currentPlace valueForKey:@"placeImage"] }
+		[imageCell setAttributes:@{ @"titleLabel":[NSString stringWithFormat:@"%@ %li", currentPlace.titleText, (long)[self heightForRowAtPosition:rowPosition]], @"detail":currentPlace.detailText, @"image":[currentPlace valueForKey:@"placeImage"] }
          ];
-        imageCell.rowPosition=rowPosition;
+		imageCell.rowPosition = rowPosition;
 		return imageCell;
 	}
 }
@@ -85,12 +85,10 @@
 	return [GFPlaceViewModel getHeightForNumberOfWords:[place.detailText length]];
 }
 
-#pragma mark - Deleting Module - 
-- (void)didDeleteCellWithPosition:(NSInteger)rowPosition
-{
-    [self.arrayOfPlaces removeObjectAtIndex:rowPosition];
-    [self.tableView reloadData];
-    
+#pragma mark - Deleting Module -
+- (void)didDeleteCellWithPosition:(NSInteger)rowPosition {
+	[self.arrayOfPlaces removeObjectAtIndex:rowPosition];
+	[self.tableView reloadData];
 }
 
 @end

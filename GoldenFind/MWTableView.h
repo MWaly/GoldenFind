@@ -11,7 +11,7 @@
 @import UIKit;
 #import "MWTableViewDataSource.h"
 #import "MWTableViewDelegate.h"
-#import "MWDefintions.h" 
+#import "MWDefintions.h"
 
 
 @class MWTableViewCell;

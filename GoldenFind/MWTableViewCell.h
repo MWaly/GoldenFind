@@ -28,7 +28,7 @@ typedef enum  {
 }ImageType;
 
 
-@interface MWTableViewCell : UIView <UIGestureRecognizerDelegate>
+@interface MWTableViewCell : UIView <UIGestureRecognizerDelegate, NSCopying>
 
 
 ///Title Label , which contains the main text to be displayed (E.g. Company name)
@@ -57,7 +57,10 @@ typedef enum  {
  */
 @property (nonatomic, readonly, assign) BOOL isSelected;
 
-
+/**
+ *  The original Frame before going Full Screen
+ */
+@property (nonatomic, assign) CGRect originFrame;
 
 /**
  *  This is the initilization method for MWTableViewCell which returns a child cell according to the cell type provided
@@ -70,6 +73,11 @@ typedef enum  {
  */
 - (instancetype)initWithReuseIdentifier:(NSString *)reuseIdentifier cellType:(ImageType)cellType;
 
-
+/**
+ *  Animate the components inside the cell to fit to the full screen view
+ *
+ *  @param fullScreenView mockedCell
+ */
+- (void)startAnimatingFullScreen:(UIView *)fullScreenView;
 
 @end

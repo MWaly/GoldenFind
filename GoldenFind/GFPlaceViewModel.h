@@ -27,6 +27,6 @@
  *
  *  @return Delete button obejct instance
  */
-+ (UIButton*)getDeleteButton;
++ (UIButton *)getDeleteButton;
 
 @end
